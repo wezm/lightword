@@ -1,0 +1,421 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LightWord 1.4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-17 21:57+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: G:\\WWW\\www\\jocuri\\wp-content\\themes\\lightword\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archives.php:12
+#: index.php:9
+msgid "Continue reading"
+msgstr "继续阅读"
+
+#: archives.php:64
+#: archives.php:74
+#: index.php:17
+#: page.php:13
+#: single.php:37
+msgid "Not Found"
+msgstr "没有找到"
+
+#: archives.php:64
+#: archives.php:75
+#: index.php:18
+#: page.php:14
+#: single.php:38
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr "对不起，貌似你要找的东东这儿没有"
+
+#: comments.php:6
+#: legacy.comments.php:6
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "想看？要咒语的，大喊芝麻开门吧。"
+
+#: comments.php:17
+#: legacy.comments.php:17
+msgid "Comments"
+msgstr "评论"
+
+#: comments.php:18
+#: legacy.comments.php:18
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: comments.php:18
+#: legacy.comments.php:18
+msgid "( subscribe to comments on this post )"
+msgstr "（在这帖子上发表评论）"
+
+#: comments.php:29
+#: legacy.comments.php:38
+msgid "Your comment is awaiting moderation."
+msgstr "您的评论正在审查中，请稍后再拨"
+
+#: comments.php:40
+#: legacy.comments.php:52
+msgid "No comments yet."
+msgstr "还没有评论。"
+
+#: comments.php:44
+#: legacy.comments.php:57
+msgid "Leave a comment"
+msgstr "留下一个评论"
+
+#: comments.php:47
+#: legacy.comments.php:60
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "你得<a href=\"%s\">登入了</a>来发表评论"
+
+#: comments.php:49
+#, fuzzy
+msgid "Click here to cancel reply"
+msgstr "点我重置所有设置"
+
+#: comments.php:55
+#: legacy.comments.php:67
+#, php-format
+msgid "Logged in as %s."
+msgstr "以%s登入。"
+
+#: comments.php:55
+#: legacy.comments.php:67
+msgid "Log out of this account"
+msgstr "账号登出"
+
+#: comments.php:55
+#: legacy.comments.php:67
+msgid "Log out &raquo;"
+msgstr "登出 &raquo;"
+
+#: comments.php:60
+#: legacy.comments.php:72
+msgid "Name"
+msgstr "您的大名"
+
+#: comments.php:60
+#: comments.php:63
+#: legacy.comments.php:72
+#: legacy.comments.php:75
+msgid "(required)"
+msgstr "(必填)"
+
+#: comments.php:63
+#: legacy.comments.php:75
+msgid "Mail (will not be published)"
+msgstr "邮箱(不会被公开的)"
+
+#: comments.php:66
+#: legacy.comments.php:78
+msgid "Website"
+msgstr "网站"
+
+#: comments.php:70
+#: legacy.comments.php:82
+#, php-format
+msgid "You can use these tags: %s"
+msgstr "你可以使用这些标签:%s"
+
+#: comments.php:74
+#: legacy.comments.php:86
+msgid "Submit"
+msgstr "就这样吧"
+
+#: comments.php:84
+#: legacy.comments.php:96
+msgid "Sorry, the comment form is closed at this time."
+msgstr "不好意思哦，这篇文章暂时不能评论。"
+
+#: comments.php:89
+#: legacy.comments.php:101
+msgid "No trackbacks yet."
+msgstr "还没trackbacks呢。"
+
+#: footer.php:8
+#, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s and developed by %s for you."
+msgstr "版权没有 %s %s %s &middot; 技术支持 %s 主题开发者 %s 。"
+
+#: footer.php:11
+msgid "Go to top"
+msgstr "我要回山顶"
+
+#: functions.php:16
+msgid "Disable Cufon"
+msgstr "禁用Cufon"
+
+#: functions.php:17
+msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
+msgstr "如果你想禁用<em>Cufon</em><br/>勾选这个框"
+
+#: functions.php:22
+msgid "Activate Extra Cufon"
+msgstr "激活Extra Cufon"
+
+#: functions.php:23
+#, fuzzy
+msgid "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature.<br/><b>For umlauts (german) and other special characters.</b>"
+msgstr "如果你想启用<em>Cufon</em><br/>勾选这个框"
+
+#: functions.php:29
+msgid "Enjoy this post"
+msgstr "这个帖子很好玩"
+
+#: functions.php:30
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "如果你想启用<em>这个帖子很好玩</em><br/>勾选这个框"
+
+#: functions.php:35
+msgid "Show categories on top"
+msgstr "在首页显示分类"
+
+#: functions.php:36
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on top bar"
+msgstr "如果你想启用 显示分类替代首页栏 勾选这个框"
+
+#: functions.php:41
+msgid "Disable comments on pages"
+msgstr "在页面上禁止评论"
+
+#: functions.php:42
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "如果你想启用 禁止评论 勾选这个框"
+
+#: functions.php:47
+msgid "Image instead text on header"
+msgstr "用图片替代首页文字"
+
+#: functions.php:48
+#, fuzzy
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Dimensions: <code>600x56px</code>"
+msgstr "图像在：<code>lightword/images/header-image.png</code> / 分辨率: <code>600x56px</code>"
+
+#: functions.php:53
+msgid "Post author"
+msgstr "帖子作者"
+
+#: functions.php:54
+msgid "Add information about post author on post footer"
+msgstr "在帖子最下面增添更多关于作者的信息"
+
+#: functions.php:59
+msgid "Take out tags in posts footer"
+msgstr ""
+
+#: functions.php:60
+#, fuzzy
+msgid "Show only categories in posts footer"
+msgstr "在首页显示分类"
+
+#: functions.php:94
+#: functions.php:104
+msgid "LightWord Settings"
+msgstr "LightWord设置"
+
+#: functions.php:99
+msgid "settings saved"
+msgstr ""
+
+#: functions.php:100
+msgid "settings reset"
+msgstr ""
+
+#: functions.php:108
+msgid "Support the developer"
+msgstr "支持开发者"
+
+#: functions.php:119
+msgid "Theme version check"
+msgstr "主题版本检查"
+
+#: functions.php:128
+#, fuzzy
+msgid "Version check failed."
+msgstr "主题版本检查"
+
+#: functions.php:130
+msgid "Cool! You have the latest version."
+msgstr "酷！你已经拥有了最新版"
+
+#: functions.php:130
+msgid "You have"
+msgstr "你有"
+
+#: functions.php:130
+msgid "Latest version"
+msgstr "最新版"
+
+#: functions.php:130
+msgid "Get the latest version"
+msgstr "我要最新版"
+
+#: functions.php:137
+msgid "General settings"
+msgstr "一般设定"
+
+#: functions.php:157
+msgid "Save changes"
+msgstr "保存更改"
+
+#: functions.php:163
+msgid "Search for help"
+msgstr "搜索帮助"
+
+#: functions.php:163
+msgid "or"
+msgstr "或者"
+
+#: functions.php:176
+#: functions.php:190
+msgid "No updates available."
+msgstr "目前没有更新。"
+
+#: functions.php:198
+msgid "What is Cufon?"
+msgstr "啥是Cufon？"
+
+#: functions.php:207
+msgid "Click here to reset all settings"
+msgstr "点我重置所有设置"
+
+#: functions.php:345
+#: legacy.comments.php:31
+msgid "F jS, Y"
+msgstr ""
+
+#: functions.php:345
+#: legacy.comments.php:31
+msgid "edit this comment"
+msgstr "编辑这个评论"
+
+#: functions.php:348
+#, fuzzy
+msgid "Reply to this comment"
+msgstr "编辑这个评论"
+
+#: header.php:36
+#: sidebar.php:43
+msgid "Syndicate this site using RSS"
+msgstr "用RSS同步本站"
+
+#: header.php:36
+msgid "Subscribe via RSS"
+msgstr "通过RSS订阅"
+
+#: header.php:39
+msgid "Home"
+msgstr "主页"
+
+#: header.php:43
+msgid "Search"
+msgstr "搜索"
+
+#: index.php:8
+#: single.php:28
+msgid "Filed under:"
+msgstr "归档在："
+
+#: index.php:8
+#: single.php:28
+msgid "Tagged as:"
+msgstr "标签："
+
+#: index.php:9
+#: single.php:29
+msgid "No Comments"
+msgstr "还没人评论"
+
+#: index.php:9
+#: single.php:29
+msgid "1 Comment"
+msgstr "一个评论"
+
+#: index.php:9
+#: single.php:29
+msgid "% Comments"
+msgstr "% 个评论"
+
+#: index.php:9
+msgid "Read more about"
+msgstr "更多关于"
+
+#: index.php:23
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; 新版入口"
+
+#: index.php:24
+msgid "Older Entries &raquo;"
+msgstr "老版入口 &raquo;"
+
+#: page.php:6
+msgid "Edit this page"
+msgstr "编辑页面"
+
+#: sidebar.php:11
+msgid "Pages"
+msgstr "页面"
+
+#: sidebar.php:18
+msgid "Categories"
+msgstr "分类"
+
+#: sidebar.php:25
+msgid "Blogroll"
+msgstr "博客滚动条"
+
+#: sidebar.php:32
+msgid "Archive"
+msgstr "文章"
+
+#: sidebar.php:39
+msgid "Meta"
+msgstr ""
+
+#: sidebar.php:43
+msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: sidebar.php:44
+msgid "The latest comments to all posts in RSS"
+msgstr "通过RSS查看所有帖子里的最新评论"
+
+#: sidebar.php:44
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr "评论 <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+
+#: single.php:7
+msgid "Edit this post"
+msgstr "编辑这个帖子"
+
+#: single.php:13
+msgid "Enjoy this article?"
+msgstr "这文章很有趣？"
+
+#: single.php:14
+msgid "Consider subscribing to our rss feed!"
+msgstr "订阅我的RSS源吧！"
+
+#: single.php:24
+msgid "Author"
+msgstr "作者"
+
+#: single.php:25
+msgid "No description. Please complete your profile."
+msgstr "请填写完您的资料。"
+
+#~ msgid ""
+#~ "Check this box if you would like to SHOW IMAGE instead Cufon text on "
+#~ "header."
+#~ msgstr "如果你想启用 在页首显示图片而不是Cufon文字 的话勾选这个框"
+
