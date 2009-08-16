@@ -29,7 +29,7 @@ h5{font-size:1.4em;}
 h6{font-size:1.3em;}
 img,img a{border:1px solid #EEE;padding:2px;}
 hr{color:#DCDCDB;background-color:#DCDCDB;height:1px;border:0px;}
-pre{width:540px; white-space:pre-wrap;}
+pre{font-family: Consolas,"Andale Mono",Monaco,fixed;width:540px; white-space:pre-wrap;margin-bottom:1em;}
 sup{vertical-align:super;}
 
 /* LAYOUT */
