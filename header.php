@@ -16,29 +16,20 @@
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
 
-<!--[if IE 6]>
-<style type="text/css">
-/*<![CDATA[*/
-#header{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php bloginfo('template_directory'); ?>/images/content_top.png',sizingMethod='scale'); }
-.comm_date{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php bloginfo('template_directory'); ?>/images/date_comm_box.png',sizingMethod='scale'); }
-#footer{background-image: none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='<?php bloginfo('template_directory'); ?>/images/content_bottom.png',sizingMethod='scale'); }
-/*]]>*/
-</style>
-<![endif]-->
 </head>
 
 <body>
-<div id="body">
+<?php lw_header_image(); ?>
 <div id="header">
+<?php lw_rss_feed(); ?>
 
-<?php top_header_image(); ?>
-
-<div id="rss-feed"><a title="<?php _e('Syndicate this site using RSS','lightword'); ?>" href="<?php bloginfo('rss2_url'); ?>"><?php _e('Subscribe via RSS','lightword'); ?></a></div><div class="clear"></div>
-
-<ul id="front_menu">
-<?php if(is_front_page()) $selected="s"; ?><li><a class="<?php echo $selected; ?>" title="<?php _e('Home','lightword'); ?>" href="<?php bloginfo('url'); ?>"><span><?php _e('Home','lightword'); ?></span></a></li>
-<?php echo wp_list_pages_new();  ?>
+<div id="top_bar">
+<ul id="front_menu"<?php echo lw_expmenu(); ?>>
+<?php echo lw_homebtn(); ?>
+<?php echo lw_wp_list_pages();  ?>
 </ul>
+<?php echo lw_searchbox(); ?>
+</div>
 
-<div id="header-search"><form method="get" id="searchform" action="<?php bloginfo('url'); ?>"> <input type="text" value="" name="s" id="s" /> <input type="submit" id="go" value="" alt="<?php _e('Search'); ?>" title="<?php _e('Search'); ?>" /></form></div><div class="clear"></div></div>
+</div>
 <div id="content">
