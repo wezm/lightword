@@ -29,7 +29,7 @@ h5{font-size:1.4em;}
 h6{font-size:1.3em;}
 img,img a{border:1px solid #EEE;padding:2px;margin-left:-2px;}
 hr{color:#DCDCDB;background-color:#DCDCDB;height:1px;border:0px;}
-code,tt,pre{font-family: Consolas,"Andale Mono",Monaco,fixed;}
+code,tt,pre{font: 13px Consolas,"Andale Mono",Monaco,fixed;}
 pre{width:540px; white-space:pre-wrap;margin-bottom:1em;}
 sup{vertical-align:super;}
 
@@ -83,9 +83,10 @@ abbr, acronym, span.abbr{cursor:help;border-bottom:1px dotted #000;}
 img.wp-smiley{border:0px;vertical-align:middle;}
 
 /* CONTENT */
-#content-body div.post p{font-family:Georgia,sans-serif;font-size:1.4em;line-height:1.4;}
-#content-body ul,#content-body ol{margin:15px 30px;font-size:12px;}
-#content-body ul li{list-style:circle;margin-bottom:4px;}
+#content-body div.post p,
+#content-body div.page p {font-family:Georgia,sans-serif;font-size:1.4em;line-height:1.4;}
+#content-body ul,#content-body ol{margin:15px 30px;font-size:1.4em;font-family:Georgia,sans-serif;line-height:1.4;}
+#content-body ul li{list-style:disc;margin-bottom:4px;}
 .hentry{min-height:150px;height:auto!important;width:550px;margin-bottom:1em;}
 .sticky h2 a{color:red;}
 .comm_date{background:transparent url(images/date_comm_box.png) no-repeat;height:100px;width:57px;position:absolute;display:inline-block;text-align:center;margin:0 0 0 -72px;z-index:2;}
