@@ -1,16 +1,14 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: LightWord 1.8.3\n"
+"Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-08 15:17+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
-"Language-Team: Tobias H. <tobiwashere.de>\n"
+"Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
@@ -19,7 +17,7 @@ msgstr ""
 #: archives.php:10
 #: index.php:12
 msgid "Continue reading"
-msgstr "weiterlesen"
+msgstr "Continúa leyendo"
 
 #: archives.php:61
 #: archives.php:71
@@ -27,7 +25,7 @@ msgstr "weiterlesen"
 #: page.php:15
 #: single.php:44
 msgid "Not Found"
-msgstr "Nicht gefunden!"
+msgstr "No encontrado"
 
 #: archives.php:61
 #: archives.php:72
@@ -35,110 +33,110 @@ msgstr "Nicht gefunden!"
 #: page.php:16
 #: single.php:45
 msgid "Sorry, but you are looking for something that isn't here."
-msgstr "Diese Seite existiert leider nicht. Evtl. bist du einem falschen Link gefolgt."
+msgstr "Lo sentimos, pero estás buscando algo que no está aquí."
 
 #: comments.php:6
 #: legacy.comments.php:6
 msgid "This post is password protected. Enter the password to view comments."
-msgstr "Dieser Artikel ist passwortgeschützt. Bitte gib das Passwort ein, um die Kommentare sehen zu können."
+msgstr "Esta entrada está protegida con contraseña. Ingresa la contraseña para ver los comentarios."
 
 #: comments.php:15
 #: index.php:12
 #: legacy.comments.php:18
 msgid "Comments"
-msgstr "Kommentare"
+msgstr "Comentarios"
 
 #: comments.php:16
 #: legacy.comments.php:19
 msgid "Trackbacks"
-msgstr "Trackbacks"
+msgstr "Trackbars"
 
 #: comments.php:17
 #: legacy.comments.php:19
 msgid "( subscribe to comments on this post )"
-msgstr "( Kommentare dieses Artikels abonieren )"
+msgstr "( suscribirse a los comentarios de esta entrada )"
 
 #: comments.php:30
 msgid "&laquo; Older Comments"
-msgstr "&laquo; neuere Artikel"
+msgstr "&laquo; Comentarios Anteriores"
 
 #: comments.php:31
 msgid "Newer Comments &raquo;"
-msgstr "neuere Kommentare &raquo;"
+msgstr "Comentarios más recientes &raquo;"
 
 #: comments.php:39
 #: legacy.comments.php:53
 msgid "No comments yet."
-msgstr "Zu diesem Artikel wurden noch keine Kommentare geschrieben."
+msgstr "Aún sin comentarios."
 
 #: comments.php:41
 #: legacy.comments.php:97
 msgid "Sorry, the comment form is closed at this time."
-msgstr "Die Kommentarfunktion ist hier derzeit deaktiviert."
+msgstr "Lo sentimos, los comentarios están cerrados por ahora."
 
 #: comments.php:48
 #: legacy.comments.php:58
 #: single.php:27
 msgid "Leave a comment"
-msgstr "Kommentar schreiben"
+msgstr "Deja un comentario"
 
 #: comments.php:51
 #: legacy.comments.php:61
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "Du musst <a href=\"%s\">angemeldet</a> sein, um ein Kommentar schreiben zu können."
+msgstr "Debes de <a href=\"%s\">iniciar sesión</a> para dejar un comentario."
 
 #: comments.php:56
 #: legacy.comments.php:68
 #, php-format
 msgid "Logged in as %s."
-msgstr "Angemeldet als %s."
+msgstr "Sesión iniciada como %s."
 
 #: comments.php:56
 #: legacy.comments.php:68
 msgid "Log out of this account"
-msgstr "Abmelden"
+msgstr "Cerrar la sesión de esta cuenta"
 
 #: comments.php:56
 #: legacy.comments.php:68
 msgid "Log out &raquo;"
-msgstr "Abmelden &raquo;"
+msgstr "Cerrar sesión &raquo;"
 
 #: comments.php:65
 #: legacy.comments.php:73
 msgid "Name"
-msgstr "Name"
+msgstr "Nombre"
 
 #: comments.php:65
 #: comments.php:68
 #: legacy.comments.php:73
 #: legacy.comments.php:76
 msgid "(required)"
-msgstr "(benötigt)"
+msgstr "(requerido)"
 
 #: comments.php:68
 #: legacy.comments.php:76
 msgid "Mail (will not be published)"
-msgstr "Email (wird nicht veröffentlicht)"
+msgstr "Email (no será publicado)"
 
 #: comments.php:71
 #: legacy.comments.php:79
 msgid "Website"
-msgstr "Website"
+msgstr "Página Web"
 
 #: comments.php:75
 #: legacy.comments.php:87
 msgid "Submit"
-msgstr "Abschicken"
+msgstr "Enviar"
 
 #: comments.php:75
 msgid "( Cancel )"
-msgstr "Abbrechen"
+msgstr ""
 
 #: comments.php:85
 #: legacy.comments.php:102
 msgid "No trackbacks yet."
-msgstr "Noch keine Trackbacks."
+msgstr "Aún sin trackbacks."
 
 #: comments.php:86
 msgid "Trackbacks are disabled."
@@ -147,16 +145,16 @@ msgstr ""
 #: footer.php:7
 #, fuzzy, php-format
 msgid "Copyright %s %s %s &middot; Powered by %s / %s developed by %s for you."
-msgstr "Copyright %s %s %s &middot; Powered by %s &middot; Theme developed by %s"
+msgstr "Derechos Reservados %s %s %s &middot; Alimentado con %s y desarrollado para ti por %s."
 
 #: footer.php:10
 msgid "Go to top"
-msgstr "nach oben"
+msgstr "Ir al inicio"
 
 #: functions.php:20
 #, fuzzy
 msgid "Cufon settings"
-msgstr "Allgemeine Einstellungen"
+msgstr "Opciones generales"
 
 #: functions.php:22
 #: functions.php:23
@@ -166,7 +164,7 @@ msgstr ""
 #: functions.php:22
 #, fuzzy
 msgid "Disabled"
-msgstr "Cufon deaktivieren"
+msgstr "Deshabilitar Cufon"
 
 #: functions.php:22
 msgid "Extra"
@@ -174,19 +172,20 @@ msgstr ""
 
 #: functions.php:26
 msgid "Disable comments on pages"
-msgstr "Kommentare auf Seiten deaktivieren"
+msgstr "Deshabilitar comentarios en las páginas"
 
 #: functions.php:27
 msgid "Check this box if you would like to DISABLE COMMENTS on pages"
-msgstr "aktivieren, um Kommentare auf allen Seiten (nicht Artikel) zu deaktivieren"
+msgstr "Habilita esta casilla si deseas DESHABILITAR LOS COMENTARIOS en las páginas"
 
 #: functions.php:32
 msgid "Image instead text on header"
-msgstr "Ein Bild, anstatt Text anzeigen"
+msgstr "Imagen en lugar de texto en la cabecera"
 
 #: functions.php:33
+#, fuzzy
 msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
-msgstr "aktivieren, um ein Bild, anstatt Cufon Text anzuzeigen (hiermit ist der Titel ganz oben auf der Seite gemeint!).<br/>Das Bild/Logo muss sich hier befinden: <code>lightword/images/header-image.png</code> / Erlaubte Größe: <code>600x56px</code>"
+msgstr "Habilita esta casilla si deseas MOSTRAR UNA IMAGEN en lugar del texto Cufon en la cabecera.<br/>Ubicación de la imagen: <code>lightword/images/header-image.png</code> / Tamaño: <code>600x56px</code>"
 
 #: functions.php:38
 msgid "Header image height in pixels"
@@ -198,26 +197,26 @@ msgstr ""
 
 #: functions.php:45
 msgid "Add information about post author on post footer"
-msgstr "aktivieren, um Informationen zum Autor am Ende des Artikels anzuzeigen"
+msgstr "Agrega información acerca del autor al pie de las entradas"
 
 #: functions.php:50
 #, fuzzy
 msgid "Enjoy this post feature"
-msgstr "Enjoy this post einschalten"
+msgstr "Me gusta la entrada"
 
 #: functions.php:51
 msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
-msgstr "aktiviert das <em>\"hat dir dieser Artikel gefallen?\"</em> Feature"
+msgstr "Habilita la casilla si deseas ACTIVAR la opción de <em>Me gusta esta entrada</em>"
 
 #: functions.php:56
 #, fuzzy
 msgid "Show categories on front menu"
-msgstr "Kategorien oben anzeigen"
+msgstr "Mostrar categorías arriba"
 
 #: functions.php:57
 #, fuzzy
 msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
-msgstr "aktivieren, um Kategorien in der oberen Navi Leiste anzuzeigen (anstatt der Seiten)"
+msgstr "Habilita la casilla si deseas MOSTRAR CATEGORÍAS en lugar de páginas en la barra superior"
 
 #: functions.php:62
 msgid "Remove tags from posts"
@@ -226,15 +225,15 @@ msgstr ""
 #: functions.php:63
 #, fuzzy
 msgid "Show only categories in post footer"
-msgstr "am Ende des Artikels werden Tags ausgeblendet und nur Kategorien angezeigt"
+msgstr "Mostrar sólo categorías al pie de las entradas"
 
 #: functions.php:68
 msgid "Remove RSS badge"
-msgstr "Blog abonnieren Button ausblenden"
+msgstr ""
 
 #: functions.php:69
 msgid "Remove RSS badge from blog header"
-msgstr "Entfernt den orange farbenen \"Blog abonnieren\" Button über dem Suchfeld bzw. blendet diesen aus"
+msgstr ""
 
 #: functions.php:74
 msgid "Remove home button"
@@ -259,111 +258,111 @@ msgstr ""
 #: functions.php:124
 #: functions.php:136
 msgid "LightWord Settings"
-msgstr "LightWord Einstellungen"
+msgstr "Opciones de LightWord"
 
 #: functions.php:131
 msgid "settings saved"
-msgstr "Einstellungen gespeichert"
+msgstr "opciones guardadas"
 
 #: functions.php:132
 msgid "settings reset"
-msgstr "Einstellungen auf Standard zurückgesetzt"
+msgstr "opciones reiniciadas"
 
 #: functions.php:140
 msgid "Support the developer"
-msgstr "Unterstütze den Entwickler dieses Themes"
+msgstr "Apoya al desarrollador"
 
 #: functions.php:151
 msgid "Theme version check"
-msgstr "Theme Versionsüberprüfung"
+msgstr "Revisa la versión del Tema"
 
 #: functions.php:160
 msgid "Version check failed."
-msgstr "Versionsüberprüfung fehlgeschlagen."
+msgstr "Falló la verificación."
 
 #: functions.php:162
 msgid "Cool! You have the latest version."
-msgstr "Du hast bereits die neueste Version installiert."
+msgstr "¡Excelente! Utilizas la última versión."
 
 #: functions.php:162
 #: functions.php:163
 #, fuzzy
 msgid "view changelog"
-msgstr "Einstellungen speichern"
+msgstr "Guardar cambios"
 
 #: functions.php:163
 msgid "You have"
-msgstr "Du hast"
+msgstr "Tienes"
 
 #: functions.php:163
 msgid "Latest version"
-msgstr "die neueste Version"
+msgstr "La última versión"
 
 #: functions.php:163
 msgid "Get the latest version"
-msgstr "Neueste Version laden"
+msgstr "Obtén la última versión"
 
 #: functions.php:170
 msgid "General settings"
-msgstr "Allgemeine Einstellungen"
+msgstr "Opciones generales"
 
 #: functions.php:208
 msgid "Save changes"
-msgstr "Einstellungen speichern"
+msgstr "Guardar cambios"
 
 #: functions.php:214
 msgid "Search for help"
-msgstr "Hilfe bekommen"
+msgstr "Buscar ayuda"
 
 #: functions.php:214
 msgid "or"
-msgstr "oder"
+msgstr "o"
 
 #: functions.php:229
 #: functions.php:241
 msgid "No updates available."
-msgstr "Keine Updates verfügbar."
+msgstr "No hay actualizaciones disponibles"
 
 #: functions.php:248
 msgid "What is Cufon?"
-msgstr "Was ist Cufon?"
+msgstr "¿Qué es Cufon?"
 
 #: functions.php:255
 msgid "Click here to reset all settings"
-msgstr "Einstellungen zurücksetzen"
+msgstr "Click aquí para reiniciar todas las opciones"
 
 #: functions.php:396
 msgid "Home"
-msgstr "Home"
+msgstr "Inicio"
 
 #: functions.php:415
 msgid "Search"
-msgstr "Suche"
+msgstr "Buscar"
 
 #: functions.php:439
 msgid "delete"
-msgstr "löschen"
+msgstr ""
 
 #: functions.php:440
 msgid "spam"
-msgstr "Spam"
+msgstr ""
 
 #: functions.php:441
 msgid "edit"
-msgstr "bearbeiten"
+msgstr ""
 
 #: functions.php:449
 msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
-msgstr "Bitte aktiviere Referrers in deinem Browser, oder, wenn du ein Spammer bist, verlasse die Seite einfach!"
+msgstr ""
 
 #: functions.php:461
 #: sidebar.php:33
 msgid "Syndicate this site using RSS"
-msgstr "Diesen Blog per RSS-Feed abonnieren"
+msgstr "Sindica este sitio utilizando RSS"
 
 #: functions.php:461
 msgid "Subscribe via RSS"
-msgstr "Blog abonnieren"
+msgstr "Suscríbete vía RSS"
 
 #: functions.php:484
 #: legacy.comments.php:32
@@ -372,69 +371,69 @@ msgstr "F jS, Y"
 
 #: functions.php:486
 msgid "( REPLY )"
-msgstr "antworten"
+msgstr "( RESPONDER )"
 
 #: functions.php:487
 #: legacy.comments.php:39
 msgid "Your comment is awaiting moderation."
-msgstr "Dein Kommentar wartet auf seine Freischaltung."
+msgstr "Tu comentario está en espera de aprobación."
 
 #: index.php:11
 #: single.php:26
 msgid "Filed under:"
-msgstr "veröffentlicht unter:"
+msgstr "Archivado en:"
 
 #: index.php:11
 #: single.php:26
 msgid "Tagged as:"
-msgstr "Tags:"
+msgstr "Etiquetado con:"
 
 #: index.php:12
 msgid "1 Comment"
-msgstr "1 Kommentar"
+msgstr "1 Comentario"
 
 #: index.php:12
 #: single.php:27
 #, fuzzy
 msgid "Comments Off"
-msgstr "Kommentare"
+msgstr "Comentarios"
 
 #: index.php:12
 msgid "No Comments"
-msgstr "keine Kommentare"
+msgstr "Sin Comentarios"
 
 #: index.php:12
 msgid "Read more about"
-msgstr "den Rest lesen von"
+msgstr "Leer más sobre"
 
 #: index.php:29
 msgid "&laquo; Newer Entries"
-msgstr "&laquo; neuere Artikel"
+msgstr "&laquo; Entradas más recientes"
 
 #: index.php:30
 msgid "Older Entries &raquo;"
-msgstr "ältere Artikel &raquo;"
+msgstr "Entradas anteriores &raquo;"
 
 #: legacy.comments.php:32
 msgid "edit this comment"
-msgstr "Kommentar bearbeiten"
+msgstr "edita este comentario"
 
 #: legacy.comments.php:83
 #, php-format
 msgid "You can use these tags: %s"
-msgstr "Du kannst diese Tags benutzen: %s"
+msgstr "Puedes utilizar estas etiquetas: %s"
 
 #: page.php:6
 msgid "Edit this page"
-msgstr "Seite bearbeiten"
+msgstr "Editar esta página"
 
 #: sidebar.php:9
 msgid "Pages"
-msgstr "Seiten"
+msgstr "Páginas"
 
 #: sidebar.php:14
 msgid "Categories"
-msgstr "Kategorien"
+msgstr "Categorías"
 
 #: sidebar.php:19
 msgid "Blogroll"
@@ -442,7 +441,7 @@ msgstr "Blogroll"
 
 #: sidebar.php:24
 msgid "Archive"
-msgstr "Archiv"
+msgstr "Archivo"
 
 #: sidebar.php:29
 msgid "Meta"
@@ -454,23 +453,23 @@ msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
 
 #: sidebar.php:34
 msgid "The latest comments to all posts in RSS"
-msgstr "die neuesten Kommentare zu allen Artikeln per RSS abonnieren"
+msgstr "Los últimos comentarios de todas las entradas en RSS"
 
 #: sidebar.php:34
 msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
-msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> (Kommentare)"
+msgstr "Comentarios <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 
 #: single.php:7
 msgid "Edit this post"
-msgstr "Artikel bearbeiten"
+msgstr "Editar esta entrada"
 
 #: single.php:13
 msgid "Enjoy this article?"
-msgstr "hat dir dieser Artikel gefallen?"
+msgstr "¿Te gustó este artículo?"
 
 #: single.php:14
 msgid "Consider subscribing to our rss feed!"
-msgstr "Dann abonniere doch diesen Blog per RSS Feed!"
+msgstr "¡Considera suscribirte a nuestro feed!"
 
 #: single.php:21
 msgid "About"
@@ -478,32 +477,24 @@ msgstr ""
 
 #: single.php:21
 msgid "No description. Please complete your profile."
-msgstr "Der Autor hat keine Beschreibung über sich erstellt."
+msgstr "Sin descripción. Porfavor completa tu perfil."
 
 #~ msgid "Post author"
-#~ msgstr "Autor Info's mit anzeigen"
+#~ msgstr "Autor de la entrada"
 #~ msgid "Take out tags in posts footer"
-#~ msgstr "Tags ausblenden"
+#~ msgstr "Omitir etiquetas al pie de las entradas"
 #~ msgid "Author"
 #~ msgstr "Autor"
 #~ msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
-#~ msgstr "deaktiviert <em>Cufon</em><br/>"
+#~ msgstr "Habilita la casilla si deseas DESHABILITAR  <em>Cufon</em><br/>"
 #~ msgid "Activate Extra Cufon"
-#~ msgstr "Extra Cufon einschalten"
+#~ msgstr "Activar Extra Cufon"
 #~ msgid ""
 #~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature."
 #~ "<br/><b>For umlauts (german) and other special characters.</b>"
 #~ msgstr ""
-#~ "aktiviert <em>Extra Cufon</em><br/><b>(für deutsche Umlaute und andere "
-#~ "Sonderzeichen)</b></code>"
-
-#, fuzzy
+#~ "Habilita la casilla si deseas HABILITAR la opción <em>Extra Cufon</em>."
+#~ "<br/><b>Para diéresis (alemán) y otros caracteres especiales.</b>"
 #~ msgid "( Click here to cancel reply )"
-#~ msgstr "Einstellungen zurücksetzen"
-#~ msgid "% Comments"
-#~ msgstr "% Kommentare"
-
-#, fuzzy
-#~ msgid "Reply to this comment"
-#~ msgstr "Kommentar bearbeiten"
+#~ msgstr "( Click aquí para cancelar la respuesta )"
 

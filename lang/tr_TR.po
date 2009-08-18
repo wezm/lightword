@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord 1.6.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-11 20:05+0200\n"
+"POT-Creation-Date: 2009-08-08 15:17+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "Language-Team: Tercan Keskin <info@tercan.net>\n"
@@ -13,403 +13,499 @@ msgstr ""
 "X-Poedit-Country: Türkiye\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: G:\\WWW\\www\\jocuri\\wp-content\\themes\\lightword\n"
-"X-Poedit-SearchPath-0: G:\\WWW\\www\\jocuri\\wp-content\\themes\\lightword\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:12
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
+#: archives.php:10
+#: index.php:12
 msgid "Continue reading"
 msgstr "Okumaya devam et"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:64
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:74
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:17
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/page.php:13
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:37
+#: archives.php:61
+#: archives.php:71
+#: index.php:23
+#: page.php:15
+#: single.php:44
 msgid "Not Found"
 msgstr "Bulunamadı"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:64
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:75
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:18
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/page.php:14
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:38
+#: archives.php:61
+#: archives.php:72
+#: index.php:24
+#: page.php:16
+#: single.php:45
 msgid "Sorry, but you are looking for something that isn't here."
-msgstr "Üzgünüz, ama aradığınız şey burada değil."
+msgstr "Üzgünüz ama aradığınız şey burada değil."
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:6
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:6
+#: comments.php:6
+#: legacy.comments.php:6
 msgid "This post is password protected. Enter the password to view comments."
 msgstr "Bu yazı şifre korumalıdır. Yorumları görmek için lütfen şifre girin."
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:17
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:17
+#: comments.php:15
+#: index.php:12
+#: legacy.comments.php:18
 msgid "Comments"
 msgstr "Yorumlar"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:18
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:18
+#: comments.php:16
+#: legacy.comments.php:19
 msgid "Trackbacks"
 msgstr "Geri izlemeler"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:18
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:18
+#: comments.php:17
+#: legacy.comments.php:19
 msgid "( subscribe to comments on this post )"
 msgstr "(bu yazının yorumlarına abone ol)"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:29
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:38
-msgid "Your comment is awaiting moderation."
-msgstr "Yorumunuz denetim için bekliyor."
+#: comments.php:30
+msgid "&laquo; Older Comments"
+msgstr "&laquo; Eski Yorumlar"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:40
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:52
+#: comments.php:31
+msgid "Newer Comments &raquo;"
+msgstr "Yeni Yorumlar &raquo;"
+
+#: comments.php:39
+#: legacy.comments.php:53
 msgid "No comments yet."
 msgstr "Yorum yapılmadı."
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:44
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:57
+#: comments.php:41
+#: legacy.comments.php:97
+msgid "Sorry, the comment form is closed at this time."
+msgstr "Üzgünüz, yorum formu şu anda kapalı."
+
+#: comments.php:48
+#: legacy.comments.php:58
+#: single.php:27
 msgid "Leave a comment"
 msgstr "Yorum gönder."
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:47
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:60
+#: comments.php:51
+#: legacy.comments.php:61
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Yorum yapabilmeniz için <a href=\"%s\">giriş</a> yapmalısınız."
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:49
-#, fuzzy
-msgid "Click here to cancel reply"
-msgstr "Tüm ayarları sıfırlamak için tıklayın"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:55
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:67
+#: comments.php:56
+#: legacy.comments.php:68
 #, php-format
 msgid "Logged in as %s."
 msgstr "%s olarak giriş yaptınız."
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:55
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:67
+#: comments.php:56
+#: legacy.comments.php:68
 msgid "Log out of this account"
 msgstr "Hesaptan çıkış yap"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:55
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:67
+#: comments.php:56
+#: legacy.comments.php:68
 msgid "Log out &raquo;"
 msgstr "Çıkış &raquo;"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:60
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:72
+#: comments.php:65
+#: legacy.comments.php:73
 msgid "Name"
 msgstr "İsim"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:60
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:63
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:72
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:75
+#: comments.php:65
+#: comments.php:68
+#: legacy.comments.php:73
+#: legacy.comments.php:76
 msgid "(required)"
 msgstr "(zorunlu)"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:63
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:75
+#: comments.php:68
+#: legacy.comments.php:76
 msgid "Mail (will not be published)"
 msgstr "E-posta (yayınlanmaz)"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:66
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:78
+#: comments.php:71
+#: legacy.comments.php:79
 msgid "Website"
 msgstr "Website"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:70
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:82
+#: comments.php:75
+#: legacy.comments.php:87
+msgid "Submit"
+msgstr "Gönder"
+
+#: comments.php:75
+msgid "( Cancel )"
+msgstr "( Vazgeç )"
+
+#: comments.php:85
+#: legacy.comments.php:102
+msgid "No trackbacks yet."
+msgstr "Geri izleme yok."
+
+#: comments.php:86
+msgid "Trackbacks are disabled."
+msgstr ""
+
+#: footer.php:7
+#, fuzzy, php-format
+msgid "Copyright %s %s %s &middot; Powered by %s / %s developed by %s for you."
+msgstr "Copyright %s %s %s &middot; Altyapı: %s &middot; Geliştirici: %s."
+
+#: footer.php:10
+msgid "Go to top"
+msgstr "En başa dön"
+
+#: functions.php:20
+#, fuzzy
+msgid "Cufon settings"
+msgstr "Genel Ayarlar"
+
+#: functions.php:22
+#: functions.php:23
+msgid "Enabled"
+msgstr ""
+
+#: functions.php:22
+#, fuzzy
+msgid "Disabled"
+msgstr "Cufon devre dışı"
+
+#: functions.php:22
+msgid "Extra"
+msgstr ""
+
+#: functions.php:26
+msgid "Disable comments on pages"
+msgstr "Sayfalar için yorumları kapat"
+
+#: functions.php:27
+msgid "Check this box if you would like to DISABLE COMMENTS on pages"
+msgstr "Eğer sayfalarda yorumları devre dışı bırakmak istiyorsanız bu kutuyu işaretleyin."
+
+#: functions.php:32
+msgid "Image instead text on header"
+msgstr "Başlıkta metin yerine resim kullan"
+
+#: functions.php:33
+msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
+msgstr "Eğer sayfa üstünde (logo olarak) Cufon metin yerine resim kullanmak istiyorsanız bu kutuyu işaretleyin.<br/>Resim adresi: <code>lightword/images/header-image.png</code> / Maksimum genişlik: <code>796px</code>"
+
+#: functions.php:38
+msgid "Header image height in pixels"
+msgstr ""
+
+#: functions.php:44
+msgid "About author feature"
+msgstr ""
+
+#: functions.php:45
+msgid "Add information about post author on post footer"
+msgstr "Yazının altına yazar bilgisini ekle"
+
+#: functions.php:50
+#, fuzzy
+msgid "Enjoy this post feature"
+msgstr "Bu yazıyı beğen"
+
+#: functions.php:51
+msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
+msgstr "Eğer <em>Bu yazıyı beğen</em> özelliğini istiyorsanız bu kutuyu işaretleyin"
+
+#: functions.php:56
+#, fuzzy
+msgid "Show categories on front menu"
+msgstr "Kategorileri üstte göster"
+
+#: functions.php:57
+#, fuzzy
+msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
+msgstr "Eğer sayfanın üst çubuğunda sayfalar yerine kategorileri görüntülemek isterseniz bu kutuyu işaretleyin."
+
+#: functions.php:62
+msgid "Remove tags from posts"
+msgstr ""
+
+#: functions.php:63
+#, fuzzy
+msgid "Show only categories in post footer"
+msgstr "Yazıların altında sadece kategori gösterilir"
+
+#: functions.php:68
+msgid "Remove RSS badge"
+msgstr "RSS rozetini kaldır"
+
+#: functions.php:69
+msgid "Remove RSS badge from blog header"
+msgstr "Blog başlığından RSS rozetini kaldır"
+
+#: functions.php:74
+msgid "Remove home button"
+msgstr ""
+
+#: functions.php:75
+msgid "Remove home button from front menu"
+msgstr ""
+
+#: functions.php:80
+msgid "Remove search box"
+msgstr ""
+
+#: functions.php:81
+msgid "Remove search box and expand space for front menu"
+msgstr ""
+
+#: functions.php:87
+msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr ""
+
+#: functions.php:124
+#: functions.php:136
+msgid "LightWord Settings"
+msgstr "LightWord Ayarları"
+
+#: functions.php:131
+msgid "settings saved"
+msgstr "ayarlar kaydedildi"
+
+#: functions.php:132
+msgid "settings reset"
+msgstr "ayarları sıfırla"
+
+#: functions.php:140
+msgid "Support the developer"
+msgstr "Geliştiriciyi destekle"
+
+#: functions.php:151
+msgid "Theme version check"
+msgstr "Tema sürüm kontrolü"
+
+#: functions.php:160
+msgid "Version check failed."
+msgstr "Sürüm kontrol hatası"
+
+#: functions.php:162
+msgid "Cool! You have the latest version."
+msgstr "Harika! En son sürüme sahipsiniz."
+
+#: functions.php:162
+#: functions.php:163
+#, fuzzy
+msgid "view changelog"
+msgstr "Değişiklikleri kaydet"
+
+#: functions.php:163
+msgid "You have"
+msgstr "Tema sürümünüz"
+
+#: functions.php:163
+msgid "Latest version"
+msgstr "En son sürüm"
+
+#: functions.php:163
+msgid "Get the latest version"
+msgstr "En son sürümünü edinin"
+
+#: functions.php:170
+msgid "General settings"
+msgstr "Genel Ayarlar"
+
+#: functions.php:208
+msgid "Save changes"
+msgstr "Değişiklikleri kaydet"
+
+#: functions.php:214
+msgid "Search for help"
+msgstr "Yardım için ara"
+
+#: functions.php:214
+msgid "or"
+msgstr "veya"
+
+#: functions.php:229
+#: functions.php:241
+msgid "No updates available."
+msgstr "Güncelleme bulunmuyor."
+
+#: functions.php:248
+msgid "What is Cufon?"
+msgstr "Cufon nedir?"
+
+#: functions.php:255
+msgid "Click here to reset all settings"
+msgstr "Tüm ayarları sıfırlamak için tıklayın"
+
+#: functions.php:396
+msgid "Home"
+msgstr "Anasayfa"
+
+#: functions.php:415
+msgid "Search"
+msgstr "Arama"
+
+#: functions.php:439
+msgid "delete"
+msgstr "sil"
+
+#: functions.php:440
+msgid "spam"
+msgstr "spam"
+
+#: functions.php:441
+msgid "edit"
+msgstr "düzenle"
+
+#: functions.php:449
+msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
+msgstr "Lütfen tarayıcınızın referer ayarlarını açın, eğer reklamcıysanız toz olun!"
+
+#: functions.php:461
+#: sidebar.php:33
+msgid "Syndicate this site using RSS"
+msgstr "Bu siteyi RSS kullanarak paylaş"
+
+#: functions.php:461
+msgid "Subscribe via RSS"
+msgstr "RSS Aboneliği"
+
+#: functions.php:484
+#: legacy.comments.php:32
+msgid "F jS, Y"
+msgstr "d F Y"
+
+#: functions.php:486
+msgid "( REPLY )"
+msgstr "( CEVAPLA )"
+
+#: functions.php:487
+#: legacy.comments.php:39
+msgid "Your comment is awaiting moderation."
+msgstr "Yorumunuz denetim için bekliyor."
+
+#: index.php:11
+#: single.php:26
+msgid "Filed under:"
+msgstr "Kategori:"
+
+#: index.php:11
+#: single.php:26
+msgid "Tagged as:"
+msgstr "Etiketler:"
+
+#: index.php:12
+msgid "1 Comment"
+msgstr "1 yorum"
+
+#: index.php:12
+#: single.php:27
+#, fuzzy
+msgid "Comments Off"
+msgstr "Yorumlar"
+
+#: index.php:12
+msgid "No Comments"
+msgstr "Yorum yok"
+
+#: index.php:12
+msgid "Read more about"
+msgstr "Hakkında daha fazla bilgi"
+
+#: index.php:29
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Yeni Yazılar"
+
+#: index.php:30
+msgid "Older Entries &raquo;"
+msgstr "Eski yazılar &raquo;"
+
+#: legacy.comments.php:32
+msgid "edit this comment"
+msgstr "bu yorumu düzenle"
+
+#: legacy.comments.php:83
 #, php-format
 msgid "You can use these tags: %s"
 msgstr "Bu etiketleri kullanabilirsiniz: %s"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:74
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:86
-msgid "Submit"
-msgstr "Gönder"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:84
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:96
-msgid "Sorry, the comment form is closed at this time."
-msgstr "Üzgünüz, yorum formu şu anda kapalı."
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:89
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:101
-msgid "No trackbacks yet."
-msgstr "Geri izleme yok."
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/footer.php:8
-#, php-format
-msgid "Copyright %s %s %s &middot; Powered by %s and developed by %s for you."
-msgstr "Copyright %s %s %s &middot; Altyapı: %s &middot; Geliştirici: %s."
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/footer.php:11
-msgid "Go to top"
-msgstr "En başa dön"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:16
-msgid "Disable Cufon"
-msgstr "Cufon devre dışı"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:17
-msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
-msgstr "<em>Cufon</em>'u devre dışı bırakmak için kutuyu işaretleyin.<br />"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:22
-msgid "Activate Extra Cufon"
-msgstr "Extra Cufon özellikleri akif"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:23
-msgid "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature.<br/><b>For umlauts (german) and other special characters.</b>"
-msgstr "<em>Extra Cufon</em> özelliklerini aktif etmek için bu kutuyu işaretleyin.<br/><b>Özel karakterleri kullanabilmek için</b>"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:29
-msgid "Enjoy this post"
-msgstr "Bu yazıyı beğen"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:30
-msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
-msgstr "Eğer <em>Bu yazıyı beğen</em> özelliğini istiyorsanız bu kutuyu işaretleyin"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:35
-msgid "Show categories on top"
-msgstr "Kategorileri üstte göster"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:36
-msgid "Check this box if you would like to SHOW CATEGORIES instead pages on top bar"
-msgstr "Eğer sayfanın üst çubuğunda sayfalar yerine kategorileri görüntülemek isterseniz bu kutuyu işaretleyin."
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:41
-msgid "Disable comments on pages"
-msgstr "Sayfalar için yorumları kapat"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:42
-msgid "Check this box if you would like to DISABLE COMMENTS on pages"
-msgstr "Eğer sayfalarda yorumları devre dışı bırakmak istiyorsanız bu kutuyu işaretleyin."
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:47
-msgid "Image instead text on header"
-msgstr "Başlıkta metin yerine resim kullan"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:48
-msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Dimensions: <code>600x56px</code>"
-msgstr "Eğer sayfa üstünde (logo olarak) Cufon metin yerine resim kullanmak istiyorsanız bu kutuyu işaretleyin.<br/>Resim adresi: <code>lightword/images/header-image.png</code> / Ebatlar: <code>600x56px</code>"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:53
-msgid "Post author"
-msgstr "Yazar"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:54
-msgid "Add information about post author on post footer"
-msgstr "Yazının altına yazar bilgisini ekle"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:59
-msgid "Take out tags in posts footer"
-msgstr "Etiketleri yazının altından çıkar"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:60
-msgid "Show only categories in posts footer"
-msgstr "Yazıların altında sadece kategori gösterilir"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:94
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:104
-msgid "LightWord Settings"
-msgstr "LightWord Ayarları"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:99
-msgid "settings saved"
-msgstr "ayarlar kaydedildi"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:100
-msgid "settings reset"
-msgstr "ayarları sıfırla"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:108
-msgid "Support the developer"
-msgstr "Geliştiriciyi destekle"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:119
-msgid "Theme version check"
-msgstr "Tema sürüm kontrolü"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:128
-#, fuzzy
-msgid "Version check failed."
-msgstr "Tema sürüm kontrolü"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:130
-msgid "Cool! You have the latest version."
-msgstr "Harika! En son sürüme sahipsiniz."
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:130
-msgid "You have"
-msgstr "Tema sürümünüz"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:130
-msgid "Latest version"
-msgstr "En son sürüm"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:130
-msgid "Get the latest version"
-msgstr "En son sürümünü edinin"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:137
-msgid "General settings"
-msgstr "Genel Ayarlar"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:157
-msgid "Save changes"
-msgstr "Değişiklikleri kaydet"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:163
-msgid "Search for help"
-msgstr "Yardım için ara"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:163
-msgid "or"
-msgstr "veya"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:176
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:190
-msgid "No updates available."
-msgstr "Güncelleme bulunmuyor."
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:198
-msgid "What is Cufon?"
-msgstr "Cufon nedir?"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:207
-msgid "Click here to reset all settings"
-msgstr "Tüm ayarları sıfırlamak için tıklayın"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:345
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:31
-msgid "F jS, Y"
-msgstr "d F Y"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:345
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:31
-msgid "edit this comment"
-msgstr "bu yorumu düzenle"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:348
-#, fuzzy
-msgid "Reply to this comment"
-msgstr "bu yorumu düzenle"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/header.php:35
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:43
-msgid "Syndicate this site using RSS"
-msgstr "Bu siteyi RSS kullanarak paylaş"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/header.php:35
-msgid "Subscribe via RSS"
-msgstr "RSS Aboneliği"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/header.php:38
-msgid "Home"
-msgstr "Anasayfa"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/header.php:42
-msgid "Search"
-msgstr "Arama"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:8
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:28
-msgid "Filed under:"
-msgstr "Kategori:"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:8
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:28
-msgid "Tagged as:"
-msgstr "Etiketler:"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:29
-msgid "No Comments"
-msgstr "Yorum yok"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:29
-msgid "1 Comment"
-msgstr "1 yorum"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:29
-msgid "% Comments"
-msgstr "% yorum"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:9
-msgid "Read more about"
-msgstr "Hakkında daha fazla bilgi"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:23
-msgid "&laquo; Newer Entries"
-msgstr "&laquo; Son Yazılar"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:24
-msgid "Older Entries &raquo;"
-msgstr "Önceki yazılar &raquo;"
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/page.php:6
+#: page.php:6
 msgid "Edit this page"
 msgstr "Bu sayfayı düzenle"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:11
+#: sidebar.php:9
 msgid "Pages"
 msgstr "Sayfalar"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:18
+#: sidebar.php:14
 msgid "Categories"
 msgstr "Kategoriler"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:25
+#: sidebar.php:19
 msgid "Blogroll"
 msgstr "Bağlantılar"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:32
+#: sidebar.php:24
 msgid "Archive"
 msgstr "Arşiv"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:39
+#: sidebar.php:29
 msgid "Meta"
 msgstr "Meta"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:43
+#: sidebar.php:33
 msgid "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
 msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr>"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:44
+#: sidebar.php:34
 msgid "The latest comments to all posts in RSS"
 msgstr "Tüm gönderilerin son yorumlar için RSS "
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:44
+#: sidebar.php:34
 msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 msgstr "Yorumlar <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:7
+#: single.php:7
 msgid "Edit this post"
 msgstr "Bu yazıyı düzenle"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:13
+#: single.php:13
 msgid "Enjoy this article?"
 msgstr "Bu yazıyı beğendiniz mi?"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:14
+#: single.php:14
 msgid "Consider subscribing to our rss feed!"
 msgstr "RSS Kaynağımıza abone olun!"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:24
-msgid "Author"
-msgstr "Yazar"
+#: single.php:21
+msgid "About"
+msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:25
+#: single.php:21
 msgid "No description. Please complete your profile."
 msgstr "Açıklama yok. Lütfen profilinizi tamamlayın."
+
+#~ msgid "Post author"
+#~ msgstr "Yazar"
+#~ msgid "Take out tags in posts footer"
+#~ msgstr "Etiketleri yazının altından çıkar"
+#~ msgid "Author"
+#~ msgstr "Yazar"
+#~ msgid "Check this box if you would like to DISABLE <em>Cufon</em><br/>"
+#~ msgstr "<em>Cufon</em>'u devre dışı bırakmak için kutuyu işaretleyin.<br />"
+#~ msgid "Activate Extra Cufon"
+#~ msgstr "Extra Cufon özellikleri akif"
+#~ msgid ""
+#~ "Check this box if you would like to ENABLE <em>Extra Cufon</em> feature."
+#~ "<br/><b>For umlauts (german) and other special characters.</b>"
+#~ msgstr ""
+#~ "<em>Extra Cufon</em> özelliklerini aktif etmek için bu kutuyu işaretleyin."
+#~ "<br/><b>Özel karakterleri kullanabilmek için</b>"
+
+#, fuzzy
+#~ msgid "( Click here to cancel reply )"
+#~ msgstr "Tüm ayarları sıfırlamak için tıklayın"
+#~ msgid "% Comments"
+#~ msgstr "% yorum"
+
+#, fuzzy
+#~ msgid "Reply to this comment"
+#~ msgstr "bu yorumu düzenle"
 
 #, fuzzy
 #~ msgid ""

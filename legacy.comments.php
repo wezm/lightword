@@ -1,12 +1,13 @@
 <?php
 if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 	die ('Please do not load this page directly. Thanks!');
-if ( post_password_required() ) {
-	echo '<p class="nocomments">';
-    echo _e('This post is password protected. Enter the password to view comments.','lightword');
-    echo '</p>';
-	return;
-}
+
+<?php if ( !empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) : ?>
+<p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.','lightword');  ?></p>
+<?php return; endif; ?>
+
+
+
 $comments_nr = get_comment_type_count('comment');
 $trackbacks_nr = get_comment_type_count('ping');
 $oddcomment = 'alt ';

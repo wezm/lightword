@@ -3,18 +3,15 @@
 Template Name: Blog archive
 */
 ?>
-
 <?php get_header(); ?>
-
 <div id="content-body">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <h2><a title="<?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 <?php the_content(__('Continue reading','lightword'));?>
-
 <?php
 // echo archives start
 $lastpost = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_date <'" . current_time('mysql') . "' AND post_status='publish' AND post_type='post' AND post_password='' ORDER BY post_date DESC LIMIT 1");
-$output = get_option('hfy_archives_'.$lastpost);
+//$output = get_option('hfy_archives_'.$lastpost);
 if(empty($output)){
 	$output = '';
 	$wpdb->query("DELETE FROM $wpdb->options WHERE option_name LIKE 'hfy_archives_%'");
@@ -38,8 +35,8 @@ if(empty($output)){
                 $text_id = strtolower(str_replace(" ","",$text));
 				$postcount = count($postresults);
                 if($postcount=="1") $postcount_text = "post"; else $postcount_text = "posts";
-				$output .= "<h2 style=\"text-transform:uppercase;cursor:pointer;font-size:16px;\"><a onclick=\"$('.hide').slideUp();$('#".$text_id."').slideDown();\">" . $text . "<span style='font-size:12px;'> (" . count($postresults) . " ".$postcount_text." )</span></a></h2>";
-                $output .= "<ul id='$text_id' class='hide' style='list-style-type:none;display:none;'>\n";
+				$output .= "<h2 class=\"archive_h2\"><a onclick=\"jQuery('#$text_id').toggle();\">" . $text . "<span> (" . count($postresults) . " ".$postcount_text." )</span></a></h2>";
+                $output .= "<ul id='$text_id' class='hide'>\n";
 
 				foreach ($postresults as $postresult) {
 					if ($postresult->post_date != '0000-00-00 00:00:00') {
