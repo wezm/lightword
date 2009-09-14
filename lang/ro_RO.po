@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-08 15:31+0200\n"
+"POT-Creation-Date: 2009-08-25 20:54+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
@@ -16,11 +16,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: archives.php:10
-#: index.php:12
-msgid "Continue reading"
-msgstr "Citeste in continuare"
-
+#: 404.php:4
 #: archives.php:61
 #: archives.php:71
 #: index.php:23
@@ -29,6 +25,7 @@ msgstr "Citeste in continuare"
 msgid "Not Found"
 msgstr ""
 
+#: 404.php:5
 #: archives.php:61
 #: archives.php:72
 #: index.php:24
@@ -37,24 +34,28 @@ msgstr ""
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr ""
 
+#: archives.php:10
+#: index.php:12
+msgid "Continue reading"
+msgstr "Citeste in continuare"
+
 #: comments.php:6
-#: legacy.comments.php:6
+#: legacy.comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
 msgstr "Acest post este protejat cu parola. Introduceti parola pentru a vedea comentariile."
 
 #: comments.php:15
 #: index.php:12
-#: legacy.comments.php:18
+#: legacy.comments.php:12
 msgid "Comments"
 msgstr "Comentarii"
 
 #: comments.php:16
-#: legacy.comments.php:19
 msgid "Trackbacks"
 msgstr ""
 
 #: comments.php:17
-#: legacy.comments.php:19
+#: legacy.comments.php:13
 msgid "( subscribe to comments on this post )"
 msgstr "( flux rss pentru comentarii )"
 
@@ -69,67 +70,67 @@ msgid "Newer Comments &raquo;"
 msgstr "Older Entries &raquo;"
 
 #: comments.php:39
-#: legacy.comments.php:53
+#: legacy.comments.php:47
 msgid "No comments yet."
 msgstr "Niciun comentariu"
 
 #: comments.php:41
-#: legacy.comments.php:97
+#: legacy.comments.php:91
 msgid "Sorry, the comment form is closed at this time."
 msgstr "Comentariile sunt inchise."
 
 #: comments.php:48
-#: legacy.comments.php:58
+#: legacy.comments.php:52
 #: single.php:27
 msgid "Leave a comment"
 msgstr "Lasa un comentariu"
 
 #: comments.php:51
-#: legacy.comments.php:61
+#: legacy.comments.php:55
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr "Trebuie sa fi <a href=\"%s\">logat</a> pentru a posta un comentariu."
 
 #: comments.php:56
-#: legacy.comments.php:68
+#: legacy.comments.php:62
 #, php-format
 msgid "Logged in as %s."
 msgstr "Logat ca %s."
 
 #: comments.php:56
-#: legacy.comments.php:68
+#: legacy.comments.php:62
 msgid "Log out of this account"
 msgstr ""
 
 #: comments.php:56
-#: legacy.comments.php:68
+#: legacy.comments.php:62
 msgid "Log out &raquo;"
 msgstr "Iesire &raquo;"
 
 #: comments.php:65
-#: legacy.comments.php:73
+#: legacy.comments.php:67
 msgid "Name"
 msgstr "Nume"
 
 #: comments.php:65
 #: comments.php:68
-#: legacy.comments.php:73
-#: legacy.comments.php:76
+#: legacy.comments.php:67
+#: legacy.comments.php:70
 msgid "(required)"
 msgstr "(obligatoriu)"
 
 #: comments.php:68
-#: legacy.comments.php:76
+#: legacy.comments.php:70
 msgid "Mail (will not be published)"
 msgstr "Email (nu va fi publicat)"
 
 #: comments.php:71
-#: legacy.comments.php:79
+#: legacy.comments.php:73
 msgid "Website"
 msgstr ""
 
 #: comments.php:75
-#: legacy.comments.php:87
+#: legacy.comments.php:81
 msgid "Submit"
 msgstr "Trimite"
 
@@ -138,7 +139,6 @@ msgid "( Cancel )"
 msgstr "( Anuleaza )"
 
 #: comments.php:85
-#: legacy.comments.php:102
 msgid "No trackbacks yet."
 msgstr "Niciun trackback."
 
@@ -148,10 +148,10 @@ msgstr ""
 
 #: footer.php:7
 #, php-format
-msgid "Copyright %s %s %s &middot; Powered by %s / %s developed by %s for you."
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
 msgstr ""
 
-#: footer.php:10
+#: footer.php:11
 msgid "Go to top"
 msgstr "Sus"
 
@@ -161,10 +161,13 @@ msgstr "Setari Cufon"
 
 #: functions.php:22
 #: functions.php:23
+#: functions.php:106
+#: functions.php:107
 msgid "Enabled"
 msgstr "Activat"
 
 #: functions.php:22
+#: functions.php:106
 msgid "Disabled"
 msgstr "Dezactivat"
 
@@ -220,19 +223,17 @@ msgid "Check this box if you would like to SHOW CATEGORIES instead pages on fron
 msgstr "Afiseaza categoriile in locul paginilor din meniul principal."
 
 #: functions.php:62
-msgid "Remove tags from posts"
-msgstr ""
+#, fuzzy
+msgid "Exclude pages from front menu"
+msgstr "Inlatura butonul Home din meniul principal"
 
 #: functions.php:63
-msgid "Show only categories in post footer"
+#: functions.php:69
+msgid "Correct input: <code>5,19,24</code>"
 msgstr ""
 
 #: functions.php:68
-msgid "Remove RSS badge"
-msgstr ""
-
-#: functions.php:69
-msgid "Remove RSS badge from blog header"
+msgid "Exclude categories from front menu"
 msgstr ""
 
 #: functions.php:74
@@ -253,132 +254,169 @@ msgstr "Inlatura butonul Home"
 msgid "Remove search box and expand space for front menu"
 msgstr "Inlatura butonul Home din meniul principal"
 
+#: functions.php:86
+msgid "Remove tags from posts"
+msgstr ""
+
 #: functions.php:87
+msgid "Show only categories in post footer"
+msgstr ""
+
+#: functions.php:92
+msgid "Remove RSS badge"
+msgstr ""
+
+#: functions.php:93
+msgid "Remove RSS badge from blog header"
+msgstr ""
+
+#: functions.php:99
 msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
 msgstr ""
 
-#: functions.php:124
-#: functions.php:136
+#: functions.php:104
+#, fuzzy
+msgid "Sidebox settings"
+msgstr "Setari Cufon"
+
+#: functions.php:106
+msgid "Show only date"
+msgstr ""
+
+#: functions.php:106
+msgid "Show only in posts"
+msgstr ""
+
+#: functions.php:106
+msgid "Last two options together"
+msgstr ""
+
+#: functions.php:138
+#: functions.php:150
 msgid "LightWord Settings"
 msgstr "Setari LightWord"
 
-#: functions.php:131
+#: functions.php:145
 msgid "settings saved"
 msgstr "setari salvate"
 
-#: functions.php:132
+#: functions.php:146
 msgid "settings reset"
 msgstr "setari resetate"
 
-#: functions.php:140
+#: functions.php:154
 msgid "Support the developer"
 msgstr "Donatii"
 
-#: functions.php:151
+#: functions.php:165
 msgid "Theme version check"
 msgstr "Verifica versiunea"
 
-#: functions.php:160
+#: functions.php:174
 msgid "Version check failed."
 msgstr "Nu s-a putut verifica versiunea."
 
-#: functions.php:162
+#: functions.php:176
 msgid "Cool! You have the latest version."
 msgstr "Super! Ai ultima versiune."
 
-#: functions.php:162
-#: functions.php:163
+#: functions.php:176
+#: functions.php:177
 #, fuzzy
 msgid "view changelog"
 msgstr "Salveaza"
 
-#: functions.php:163
+#: functions.php:177
 msgid "You have"
 msgstr "Tu ai"
 
-#: functions.php:163
+#: functions.php:177
 msgid "Latest version"
 msgstr "Ultima versiune"
 
-#: functions.php:163
+#: functions.php:177
 msgid "Get the latest version"
 msgstr "Descarca ultima versiune"
 
-#: functions.php:170
+#: functions.php:184
 msgid "General settings"
 msgstr "Setari generale"
 
-#: functions.php:208
+#: functions.php:238
 msgid "Save changes"
 msgstr "Salveaza"
 
-#: functions.php:214
+#: functions.php:244
 msgid "Search for help"
 msgstr "Cauta ajutor"
 
-#: functions.php:214
+#: functions.php:244
 msgid "or"
 msgstr "sau"
 
-#: functions.php:229
-#: functions.php:241
+#: functions.php:259
+#: functions.php:271
 msgid "No updates available."
 msgstr "Nu sunt actualizari."
 
-#: functions.php:248
+#: functions.php:278
 msgid "What is Cufon?"
 msgstr "Ce e Cufon?"
 
-#: functions.php:255
+#: functions.php:285
 msgid "Click here to reset all settings"
 msgstr "Reseteaza setarile"
 
-#: functions.php:396
-msgid "Home"
-msgstr "Acasa"
-
-#: functions.php:415
+#: functions.php:482
 msgid "Search"
 msgstr "Cauta"
 
-#: functions.php:439
+#: functions.php:507
+#: functions.php:524
+msgid "Off"
+msgstr ""
+
+#: functions.php:562
 msgid "delete"
 msgstr "sterge"
 
-#: functions.php:440
+#: functions.php:563
 msgid "spam"
 msgstr ""
 
-#: functions.php:441
+#: functions.php:564
 msgid "edit"
 msgstr "editeaza"
 
-#: functions.php:449
+#: functions.php:572
 msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
 msgstr ""
 
-#: functions.php:461
+#: functions.php:584
 #: sidebar.php:33
 msgid "Syndicate this site using RSS"
 msgstr ""
 
-#: functions.php:461
+#: functions.php:584
 msgid "Subscribe via RSS"
 msgstr "Aboneaza-te la RSS"
 
-#: functions.php:484
-#: legacy.comments.php:32
-msgid "F jS, Y"
+#: functions.php:607
+msgid "F jS, Y - H:i"
 msgstr ""
 
-#: functions.php:486
+#: functions.php:609
 msgid "( REPLY )"
 msgstr "( RASPUNDE )"
 
-#: functions.php:487
-#: legacy.comments.php:39
+#: functions.php:610
+#: legacy.comments.php:33
 msgid "Your comment is awaiting moderation."
 msgstr "Comentariul tau asteapta sa fie aprobat."
+
+#: header.php:28
+msgid "Home"
+msgstr "Acasa"
 
 #: index.php:11
 #: single.php:26
@@ -415,11 +453,15 @@ msgstr ""
 msgid "Older Entries &raquo;"
 msgstr "Older Entries &raquo;"
 
-#: legacy.comments.php:32
+#: legacy.comments.php:26
+msgid "F jS, Y"
+msgstr ""
+
+#: legacy.comments.php:26
 msgid "edit this comment"
 msgstr "editeaza acest comentariu"
 
-#: legacy.comments.php:83
+#: legacy.comments.php:77
 #, php-format
 msgid "You can use these tags: %s"
 msgstr "Poti folosi aceste tag-uri: %s"

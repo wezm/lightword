@@ -20,4 +20,4 @@ Clean code, less divs.
 Best regards,
 
 Andrei Luca
-http://students.info.uaic.ro/~andrei.luca/
+http://www.andrei-webdesign.com/

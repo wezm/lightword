@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-08 15:16+0200\n"
+"POT-Creation-Date: 2009-08-19 23:40+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
@@ -17,11 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: archives.php:10
-#: index.php:12
-msgid "Continue reading"
-msgstr "Читать полностью"
-
+#: 404.php:4
 #: archives.php:61
 #: archives.php:71
 #: index.php:23
@@ -30,6 +26,7 @@ msgstr "Читать полностью"
 msgid "Not Found"
 msgstr "Не найдено"
 
+#: 404.php:5
 #: archives.php:61
 #: archives.php:72
 #: index.php:24
@@ -37,6 +34,11 @@ msgstr "Не найдено"
 #: single.php:45
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr "Извините, ничего не найдено по вашему запросу."
+
+#: archives.php:10
+#: index.php:12
+msgid "Continue reading"
+msgstr "Читать полностью"
 
 #: comments.php:6
 #: legacy.comments.php:6
@@ -149,10 +151,10 @@ msgstr ""
 
 #: footer.php:7
 #, php-format
-msgid "Copyright %s %s %s &middot; Powered by %s / %s developed by %s for you."
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
 msgstr ""
 
-#: footer.php:10
+#: footer.php:11
 msgid "Go to top"
 msgstr "Перейти наверх"
 
@@ -163,10 +165,13 @@ msgstr "Основные установки"
 
 #: functions.php:22
 #: functions.php:23
+#: functions.php:106
+#: functions.php:107
 msgid "Enabled"
 msgstr ""
 
 #: functions.php:22
+#: functions.php:106
 #, fuzzy
 msgid "Disabled"
 msgstr "Отключить Cufon"
@@ -224,21 +229,19 @@ msgid "Check this box if you would like to SHOW CATEGORIES instead pages on fron
 msgstr "Активируйте эту опцию если вы хотите ОТКЛЮЧИТЬ <em>Cufon</em>"
 
 #: functions.php:62
-msgid "Remove tags from posts"
-msgstr ""
-
-#: functions.php:63
 #, fuzzy
-msgid "Show only categories in post footer"
+msgid "Exclude pages from front menu"
 msgstr "Показывать категории сверху"
 
-#: functions.php:68
-msgid "Remove RSS badge"
+#: functions.php:63
+#: functions.php:69
+msgid "Correct input: <code>5,19,24</code>"
 msgstr ""
 
-#: functions.php:69
-msgid "Remove RSS badge from blog header"
-msgstr ""
+#: functions.php:68
+#, fuzzy
+msgid "Exclude categories from front menu"
+msgstr "Показывать категории сверху"
 
 #: functions.php:74
 msgid "Remove home button"
@@ -256,129 +259,168 @@ msgstr ""
 msgid "Remove search box and expand space for front menu"
 msgstr ""
 
+#: functions.php:86
+msgid "Remove tags from posts"
+msgstr ""
+
 #: functions.php:87
+#, fuzzy
+msgid "Show only categories in post footer"
+msgstr "Показывать категории сверху"
+
+#: functions.php:92
+msgid "Remove RSS badge"
+msgstr ""
+
+#: functions.php:93
+msgid "Remove RSS badge from blog header"
+msgstr ""
+
+#: functions.php:99
 msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
 msgstr ""
 
-#: functions.php:124
-#: functions.php:136
+#: functions.php:104
+#, fuzzy
+msgid "Sidebox settings"
+msgstr "Основные установки"
+
+#: functions.php:106
+msgid "Show only date"
+msgstr ""
+
+#: functions.php:106
+#, fuzzy
+msgid "Show only in posts"
+msgstr "Показывать категории сверху"
+
+#: functions.php:106
+msgid "Last two options together"
+msgstr ""
+
+#: functions.php:142
+#: functions.php:154
 msgid "LightWord Settings"
 msgstr "LightWord установки"
 
-#: functions.php:131
+#: functions.php:149
 msgid "settings saved"
 msgstr ""
 
-#: functions.php:132
+#: functions.php:150
 msgid "settings reset"
 msgstr ""
 
-#: functions.php:140
+#: functions.php:158
 msgid "Support the developer"
 msgstr "Поддержка разработчика"
 
-#: functions.php:151
+#: functions.php:169
 msgid "Theme version check"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:178
 msgid "Version check failed."
 msgstr ""
 
-#: functions.php:162
+#: functions.php:180
 msgid "Cool! You have the latest version."
 msgstr ""
 
-#: functions.php:162
-#: functions.php:163
+#: functions.php:180
+#: functions.php:181
 #, fuzzy
 msgid "view changelog"
 msgstr "Сохранить изменения"
 
-#: functions.php:163
+#: functions.php:181
 msgid "You have"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:181
 msgid "Latest version"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:181
 msgid "Get the latest version"
 msgstr ""
 
-#: functions.php:170
+#: functions.php:188
 msgid "General settings"
 msgstr "Основные установки"
 
-#: functions.php:208
+#: functions.php:242
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
-#: functions.php:214
+#: functions.php:248
 msgid "Search for help"
 msgstr "Искать в справке"
 
-#: functions.php:214
+#: functions.php:248
 msgid "or"
 msgstr ""
 
-#: functions.php:229
-#: functions.php:241
+#: functions.php:263
+#: functions.php:275
 msgid "No updates available."
 msgstr "Не найдено обновлений."
 
-#: functions.php:248
+#: functions.php:282
 msgid "What is Cufon?"
 msgstr ""
 
-#: functions.php:255
+#: functions.php:289
 msgid "Click here to reset all settings"
 msgstr "Сбросить все настройки"
 
-#: functions.php:396
+#: functions.php:454
 msgid "Home"
 msgstr "Главная"
 
-#: functions.php:415
+#: functions.php:486
 msgid "Search"
 msgstr "Поиск"
 
-#: functions.php:439
+#: functions.php:511
+#: functions.php:528
+msgid "Off"
+msgstr ""
+
+#: functions.php:566
 msgid "delete"
 msgstr ""
 
-#: functions.php:440
+#: functions.php:567
 msgid "spam"
 msgstr ""
 
-#: functions.php:441
+#: functions.php:568
 msgid "edit"
 msgstr ""
 
-#: functions.php:449
+#: functions.php:576
 msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
 msgstr ""
 
-#: functions.php:461
+#: functions.php:588
 #: sidebar.php:33
 msgid "Syndicate this site using RSS"
 msgstr "Экспортировать новости сайта в формате RSS"
 
-#: functions.php:461
+#: functions.php:588
 msgid "Subscribe via RSS"
 msgstr "Подписка на RSS"
 
-#: functions.php:484
-#: legacy.comments.php:32
-msgid "F jS, Y"
+#: functions.php:611
+msgid "F jS, Y - H:i"
 msgstr ""
 
-#: functions.php:486
+#: functions.php:613
 msgid "( REPLY )"
 msgstr ""
 
-#: functions.php:487
+#: functions.php:614
 #: legacy.comments.php:39
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает проверки."
@@ -418,6 +460,10 @@ msgstr "&laquo; Новее записи"
 #: index.php:30
 msgid "Older Entries &raquo;"
 msgstr "Предыдущие записи &raquo;"
+
+#: legacy.comments.php:32
+msgid "F jS, Y"
+msgstr ""
 
 #: legacy.comments.php:32
 msgid "edit this comment"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-08 15:17+0200\n"
+"POT-Creation-Date: 2009-08-19 23:38+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
@@ -14,11 +14,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: archives.php:10
-#: index.php:12
-msgid "Continue reading"
-msgstr "继续阅读"
-
+#: 404.php:4
 #: archives.php:61
 #: archives.php:71
 #: index.php:23
@@ -27,6 +23,7 @@ msgstr "继续阅读"
 msgid "Not Found"
 msgstr "未找到"
 
+#: 404.php:5
 #: archives.php:61
 #: archives.php:72
 #: index.php:24
@@ -34,6 +31,11 @@ msgstr "未找到"
 #: single.php:45
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr "很抱歉,但您所寻找的东西不在这里."
+
+#: archives.php:10
+#: index.php:12
+msgid "Continue reading"
+msgstr "继续阅读"
 
 #: comments.php:6
 #: legacy.comments.php:6
@@ -58,11 +60,11 @@ msgstr "(订阅这个帖子上的评论)"
 
 #: comments.php:30
 msgid "&laquo; Older Comments"
-msgstr "&laquo; 较旧的评论"
+msgstr "&laquo; 下一页"
 
 #: comments.php:31
 msgid "Newer Comments &raquo;"
-msgstr "较新的评论 &raquo;"
+msgstr "上一页 &raquo;"
 
 #: comments.php:39
 #: legacy.comments.php:53
@@ -131,7 +133,7 @@ msgstr "提交"
 
 #: comments.php:75
 msgid "( Cancel )"
-msgstr ""
+msgstr "(取消)"
 
 #: comments.php:85
 #: legacy.comments.php:102
@@ -140,35 +142,36 @@ msgstr "还没有引用."
 
 #: comments.php:86
 msgid "Trackbacks are disabled."
-msgstr ""
+msgstr "引用被禁用."
 
 #: footer.php:7
 #, fuzzy, php-format
-msgid "Copyright %s %s %s &middot; Powered by %s / %s developed by %s for you."
-msgstr "Copyright %s %s %s &middot; Powered by %s and developed by %s for you.由<a href='http://cheon.info'>泉泉</a>汉化."
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
+msgstr "Copyright %s %s %s &middot; Powered by %s / %s developed by %s for you.由<a href=\"http://cheon.info\">泉泉</a>汉化."
 
-#: footer.php:10
+#: footer.php:11
 msgid "Go to top"
 msgstr "返回页首"
 
 #: functions.php:20
-#, fuzzy
 msgid "Cufon settings"
-msgstr "一般设置"
+msgstr "Cufon 设置"
 
 #: functions.php:22
 #: functions.php:23
+#: functions.php:106
+#: functions.php:107
 msgid "Enabled"
-msgstr ""
+msgstr "启用"
 
 #: functions.php:22
-#, fuzzy
+#: functions.php:106
 msgid "Disabled"
-msgstr "禁用 Cufon"
+msgstr "禁用"
 
 #: functions.php:22
 msgid "Extra"
-msgstr ""
+msgstr "附加的"
 
 #: functions.php:26
 msgid "Disable comments on pages"
@@ -183,197 +186,229 @@ msgid "Image instead text on header"
 msgstr "用图像代替标题上的文字"
 
 #: functions.php:33
-#, fuzzy
 msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
-msgstr "如果您想用图像代替标题上的Cufon文字请选中这个复选框.<br/>图片位置:<code>lightword/images/header-image.png</code> / 尺寸:<code>600x56px</code>"
+msgstr "如果您想用图像代替标题上的Cufon文字请选中这个复选框.<br/>图片位置:<code>lightword/images/header-image.png</code> / 最大宽度:<code>796px</code>"
 
 #: functions.php:38
 msgid "Header image height in pixels"
-msgstr ""
+msgstr "标题图片像素高度"
 
 #: functions.php:44
 msgid "About author feature"
-msgstr ""
+msgstr "关于作者功能"
 
 #: functions.php:45
 msgid "Add information about post author on post footer"
 msgstr "在帖子页脚添加作者信息"
 
 #: functions.php:50
-#, fuzzy
 msgid "Enjoy this post feature"
-msgstr "喜欢这个帖子"
+msgstr "喜欢这个帖子功能"
 
 #: functions.php:51
 msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
 msgstr "如果您想激活<em>喜欢这个帖子</em>功能请选中这个复选框"
 
 #: functions.php:56
-#, fuzzy
 msgid "Show categories on front menu"
-msgstr "在页首显示分类"
+msgstr "在主菜单上显示分类"
 
 #: functions.php:57
-#, fuzzy
 msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
 msgstr "如果您想在页首栏上显示分类来替换页面请选中这个复选框"
 
 #: functions.php:62
-msgid "Remove tags from posts"
-msgstr ""
+#, fuzzy
+msgid "Exclude pages from front menu"
+msgstr "在主菜单上显示分类"
 
 #: functions.php:63
-#, fuzzy
-msgid "Show only categories in post footer"
-msgstr "帖子页脚只显示分类"
+#: functions.php:69
+msgid "Correct input: <code>5,19,24</code>"
+msgstr ""
 
 #: functions.php:68
-msgid "Remove RSS badge"
-msgstr ""
-
-#: functions.php:69
-msgid "Remove RSS badge from blog header"
-msgstr ""
+#, fuzzy
+msgid "Exclude categories from front menu"
+msgstr "在主菜单上显示分类"
 
 #: functions.php:74
 msgid "Remove home button"
-msgstr ""
+msgstr "移除首页按钮"
 
 #: functions.php:75
 msgid "Remove home button from front menu"
-msgstr ""
+msgstr "从主菜单删除首页按钮"
 
 #: functions.php:80
 msgid "Remove search box"
-msgstr ""
+msgstr "移除搜索框"
 
 #: functions.php:81
 msgid "Remove search box and expand space for front menu"
-msgstr ""
+msgstr "移除主菜单上的搜索框并扩展空间"
+
+#: functions.php:86
+msgid "Remove tags from posts"
+msgstr "移除标签"
 
 #: functions.php:87
+msgid "Show only categories in post footer"
+msgstr "帖子页脚只显示分类"
+
+#: functions.php:92
+msgid "Remove RSS badge"
+msgstr "移除RSS标志"
+
+#: functions.php:93
+msgid "Remove RSS badge from blog header"
+msgstr "从博客页眉移除RSS标志"
+
+#: functions.php:99
 msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "在Google自定义搜索引擎搜索框代码中查找<code>name=\"cx\"</code>并在这里输入."
+
+#: functions.php:104
+#, fuzzy
+msgid "Sidebox settings"
+msgstr "Cufon 设置"
+
+#: functions.php:106
+msgid "Show only date"
 msgstr ""
 
-#: functions.php:124
-#: functions.php:136
+#: functions.php:106
+#, fuzzy
+msgid "Show only in posts"
+msgstr "帖子页脚只显示分类"
+
+#: functions.php:106
+msgid "Last two options together"
+msgstr ""
+
+#: functions.php:142
+#: functions.php:154
 msgid "LightWord Settings"
 msgstr "LightWord 设置"
 
-#: functions.php:131
+#: functions.php:149
 msgid "settings saved"
 msgstr "设置已保存"
 
-#: functions.php:132
+#: functions.php:150
 msgid "settings reset"
 msgstr "设置已重置"
 
-#: functions.php:140
+#: functions.php:158
 msgid "Support the developer"
 msgstr "支援开发者"
 
-#: functions.php:151
+#: functions.php:169
 msgid "Theme version check"
 msgstr "检查主题版本"
 
-#: functions.php:160
+#: functions.php:178
 msgid "Version check failed."
 msgstr "版本检查失败."
 
-#: functions.php:162
+#: functions.php:180
 msgid "Cool! You have the latest version."
 msgstr "帅呆了!您正在使用最新版本."
 
-#: functions.php:162
-#: functions.php:163
-#, fuzzy
+#: functions.php:180
+#: functions.php:181
 msgid "view changelog"
-msgstr "保存更改"
+msgstr "查看修改"
 
-#: functions.php:163
+#: functions.php:181
 msgid "You have"
 msgstr "您正在使用"
 
-#: functions.php:163
+#: functions.php:181
 msgid "Latest version"
 msgstr "最新版本"
 
-#: functions.php:163
+#: functions.php:181
 msgid "Get the latest version"
 msgstr "获取最新版本"
 
-#: functions.php:170
+#: functions.php:188
 msgid "General settings"
 msgstr "一般设置"
 
-#: functions.php:208
+#: functions.php:242
 msgid "Save changes"
 msgstr "保存更改"
 
-#: functions.php:214
+#: functions.php:248
 msgid "Search for help"
 msgstr "搜索帮助"
 
-#: functions.php:214
+#: functions.php:248
 msgid "or"
 msgstr "或"
 
-#: functions.php:229
-#: functions.php:241
+#: functions.php:263
+#: functions.php:275
 msgid "No updates available."
 msgstr "没有可用更新."
 
-#: functions.php:248
+#: functions.php:282
 msgid "What is Cufon?"
 msgstr "Cufon是什么?"
 
-#: functions.php:255
+#: functions.php:289
 msgid "Click here to reset all settings"
 msgstr "点击这里重置所有设置"
 
-#: functions.php:396
+#: functions.php:454
 msgid "Home"
 msgstr "首页"
 
-#: functions.php:415
+#: functions.php:486
 msgid "Search"
 msgstr "搜索"
 
-#: functions.php:439
+#: functions.php:511
+#: functions.php:528
+msgid "Off"
+msgstr ""
+
+#: functions.php:566
 msgid "delete"
-msgstr ""
+msgstr "删除"
 
-#: functions.php:440
+#: functions.php:567
 msgid "spam"
-msgstr ""
+msgstr "垃圾评论"
 
-#: functions.php:441
+#: functions.php:568
 msgid "edit"
-msgstr ""
+msgstr "编辑"
 
-#: functions.php:449
+#: functions.php:576
 msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
-msgstr ""
+msgstr "请在您的浏览器启用引擎,如果你是枪手,请你滚开!"
 
-#: functions.php:461
+#: functions.php:588
 #: sidebar.php:33
 msgid "Syndicate this site using RSS"
 msgstr "使用RSS同步这个网站"
 
-#: functions.php:461
+#: functions.php:588
 msgid "Subscribe via RSS"
 msgstr "通过RSS订阅"
 
-#: functions.php:484
-#: legacy.comments.php:32
-msgid "F jS, Y"
+#: functions.php:611
+#, fuzzy
+msgid "F jS, Y - H:i"
 msgstr "Y年m月d日"
 
-#: functions.php:486
+#: functions.php:613
 msgid "( REPLY )"
 msgstr "(回复)"
 
-#: functions.php:487
+#: functions.php:614
 #: legacy.comments.php:39
 msgid "Your comment is awaiting moderation."
 msgstr "您的评论正等待审核."
@@ -394,9 +429,8 @@ msgstr "1个评论"
 
 #: index.php:12
 #: single.php:27
-#, fuzzy
 msgid "Comments Off"
-msgstr "评论"
+msgstr "评论关闭"
 
 #: index.php:12
 msgid "No Comments"
@@ -413,6 +447,10 @@ msgstr "&laquo; 上一页"
 #: index.php:30
 msgid "Older Entries &raquo;"
 msgstr "下一页"
+
+#: legacy.comments.php:32
+msgid "F jS, Y"
+msgstr "Y年m月d日"
 
 #: legacy.comments.php:32
 msgid "edit this comment"
@@ -473,7 +511,7 @@ msgstr "考虑订阅我们的RSS Feed吧!"
 
 #: single.php:21
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: single.php:21
 msgid "No description. Please complete your profile."

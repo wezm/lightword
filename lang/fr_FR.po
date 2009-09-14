@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-08 15:17+0200\n"
+"POT-Creation-Date: 2009-08-19 23:39+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
@@ -16,11 +16,7 @@ msgstr ""
 "X-Poedit-Country: FRANCE\n"
 "X-Poedit-SearchPath-0: G:\\WWW\\www\\jocuri\\wp-content\\themes\\lightword\n"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:10
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:12
-msgid "Continue reading"
-msgstr "Lire la suite"
-
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/404.php:4
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:61
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:71
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:23
@@ -29,6 +25,7 @@ msgstr "Lire la suite"
 msgid "Not Found"
 msgstr "Non trouvé"
 
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/404.php:5
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:61
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:72
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:24
@@ -36,6 +33,11 @@ msgstr "Non trouvé"
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/single.php:45
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr "Désolé, mais vous cherchez quelquechose qui n'est pas là"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/archives.php:10
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:12
+msgid "Continue reading"
+msgstr "Lire la suite"
 
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/comments.php:6
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:6
@@ -148,10 +150,10 @@ msgstr ""
 
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/footer.php:7
 #, fuzzy, php-format
-msgid "Copyright %s %s %s &middot; Powered by %s / %s developed by %s for you."
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
 msgstr "Copyright %s %s %s &middot; Propulsé par %s et développé par %s pour vous."
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/footer.php:10
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/footer.php:11
 msgid "Go to top"
 msgstr "Aller en haut"
 
@@ -161,10 +163,13 @@ msgstr ""
 
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:22
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:23
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:106
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:107
 msgid "Enabled"
 msgstr ""
 
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:22
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:106
 msgid "Disabled"
 msgstr ""
 
@@ -218,19 +223,16 @@ msgid "Check this box if you would like to SHOW CATEGORIES instead pages on fron
 msgstr ""
 
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:62
-msgid "Remove tags from posts"
+msgid "Exclude pages from front menu"
 msgstr ""
 
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:63
-msgid "Show only categories in post footer"
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:69
+msgid "Correct input: <code>5,19,24</code>"
 msgstr ""
 
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:68
-msgid "Remove RSS badge"
-msgstr ""
-
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:69
-msgid "Remove RSS badge from blog header"
+msgid "Exclude categories from front menu"
 msgstr ""
 
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:74
@@ -249,128 +251,165 @@ msgstr ""
 msgid "Remove search box and expand space for front menu"
 msgstr ""
 
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:86
+msgid "Remove tags from posts"
+msgstr ""
+
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:87
+msgid "Show only categories in post footer"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:92
+msgid "Remove RSS badge"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:93
+msgid "Remove RSS badge from blog header"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:99
 msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:124
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:136
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:104
+msgid "Sidebox settings"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:106
+msgid "Show only date"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:106
+msgid "Show only in posts"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:106
+msgid "Last two options together"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:142
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:154
 msgid "LightWord Settings"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:131
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:149
 msgid "settings saved"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:132
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:150
 msgid "settings reset"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:140
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:158
 msgid "Support the developer"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:151
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:169
 msgid "Theme version check"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:160
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:178
 msgid "Version check failed."
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:162
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:180
 msgid "Cool! You have the latest version."
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:162
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:163
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:180
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:181
 msgid "view changelog"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:163
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:181
 msgid "You have"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:163
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:181
 msgid "Latest version"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:163
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:181
 msgid "Get the latest version"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:170
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:188
 msgid "General settings"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:208
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:242
 msgid "Save changes"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:214
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:248
 msgid "Search for help"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:214
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:248
 msgid "or"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:229
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:241
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:263
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:275
 msgid "No updates available."
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:248
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:282
 msgid "What is Cufon?"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:255
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:289
 msgid "Click here to reset all settings"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:396
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:454
 msgid "Home"
 msgstr "Accueil"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:415
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:486
 msgid "Search"
 msgstr "Recherche"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:439
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:511
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:528
+msgid "Off"
+msgstr ""
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:566
 msgid "delete"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:440
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:567
 msgid "spam"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:441
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:568
 msgid "edit"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:449
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:576
 msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:461
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:588
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/sidebar.php:33
 msgid "Syndicate this site using RSS"
 msgstr "Se syndiquer au site avec RSS"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:461
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:588
 msgid "Subscribe via RSS"
 msgstr "Souscrire via RSS"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:484
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:32
-msgid "F jS, Y"
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:611
+#, fuzzy
+msgid "F jS, Y - H:i"
 msgstr "j F Y"
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:486
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:613
 msgid "( REPLY )"
 msgstr ""
 
-#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:487
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/functions.php:614
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:39
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attenté de modération"
@@ -411,6 +450,10 @@ msgstr "&laquo; Nouvelles"
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/index.php:30
 msgid "Older Entries &raquo;"
 msgstr "Anciennes &raquo;"
+
+#: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:32
+msgid "F jS, Y"
+msgstr "j F Y"
 
 #: G:\WWW\www\jocuri\wp-content\themes\lightword/legacy.comments.php:32
 msgid "edit this comment"
