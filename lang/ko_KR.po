@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LightWord\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-08 15:17+0200\n"
+"POT-Creation-Date: 2009-08-19 23:38+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Andrei Luca <andrei.luca@info.uaic.ro>\n"
 "Language-Team: Andrei Luca <andrei.luca@info.uaic.ro>\n"
@@ -14,11 +14,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: archives.php:10
-#: index.php:12
-msgid "Continue reading"
-msgstr "계속 읽기"
-
+#: 404.php:4
 #: archives.php:61
 #: archives.php:71
 #: index.php:23
@@ -27,6 +23,7 @@ msgstr "계속 읽기"
 msgid "Not Found"
 msgstr "찾을 수 없습니다"
 
+#: 404.php:5
 #: archives.php:61
 #: archives.php:72
 #: index.php:24
@@ -34,6 +31,11 @@ msgstr "찾을 수 없습니다"
 #: single.php:45
 msgid "Sorry, but you are looking for something that isn't here."
 msgstr "죄송합니다, 귀한는 이곳에 없는 뭔가를 찾고있습니다."
+
+#: archives.php:10
+#: index.php:12
+msgid "Continue reading"
+msgstr "계속 읽기"
 
 #: comments.php:6
 #: legacy.comments.php:6
@@ -131,7 +133,7 @@ msgstr "등록"
 
 #: comments.php:75
 msgid "( Cancel )"
-msgstr ""
+msgstr "(취소)"
 
 #: comments.php:85
 #: legacy.comments.php:102
@@ -140,35 +142,36 @@ msgstr "아직 엮인글이 없습니다."
 
 #: comments.php:86
 msgid "Trackbacks are disabled."
-msgstr ""
+msgstr "엮인글이 비활성 상태입니다."
 
 #: footer.php:7
 #, fuzzy, php-format
-msgid "Copyright %s %s %s &middot; Powered by %s / %s developed by %s for you."
-msgstr "Copyright %s %s %s &middot; Powered by %s and developed by %s for you.한국어 번역:<a href='http://cheon.info'>천</a>."
+msgid "Copyright %s %s %s &middot; Powered by %s <br/> %s developed by %s for you."
+msgstr "Copyright %s %s %s &middot; Powered by %s / %s developed by %s for you.한국어 번역:<a href=\"http://cheon.info\">천</a>."
 
-#: footer.php:10
+#: footer.php:11
 msgid "Go to top"
 msgstr "위로 이동"
 
 #: functions.php:20
-#, fuzzy
 msgid "Cufon settings"
-msgstr "일반설정"
+msgstr "Cufon 설정"
 
 #: functions.php:22
 #: functions.php:23
+#: functions.php:106
+#: functions.php:107
 msgid "Enabled"
-msgstr ""
+msgstr "활성화"
 
 #: functions.php:22
-#, fuzzy
+#: functions.php:106
 msgid "Disabled"
-msgstr "Cufon 비활성화"
+msgstr "비활성화"
 
 #: functions.php:22
 msgid "Extra"
-msgstr ""
+msgstr "엑스트라"
 
 #: functions.php:26
 msgid "Disable comments on pages"
@@ -183,197 +186,229 @@ msgid "Image instead text on header"
 msgstr "헤더에 텍스트 대신 이미지"
 
 #: functions.php:33
-#, fuzzy
 msgid "Check this box if you would like to SHOW IMAGE instead Cufon text on header.<br/>Image location: <code>lightword/images/header-image.png</code> / Max width: <code>796px</code>"
-msgstr "헤더에 Cufon텍스트 대신 이미지를 표시하려면 이 박스를 체크하십시오.<br/>이미지위치: <code>lightword/images/header-image.png</code> / 치수: <code>600x56px</code>"
+msgstr "헤더에 Cufon텍스트 대신 이미지를 표시하려면 이 박스를 체크하십시오.<br/>이미지위치: <code>lightword/images/header-image.png</code> / 최대너비: <code>796px</code>"
 
 #: functions.php:38
 msgid "Header image height in pixels"
-msgstr ""
+msgstr "헤더 이미지 픽셀 높이"
 
 #: functions.php:44
 msgid "About author feature"
-msgstr ""
+msgstr "글쓴이 소개 기능"
 
 #: functions.php:45
 msgid "Add information about post author on post footer"
 msgstr "포스트 하단에 포스트 작성자에 대한 정보 추가"
 
 #: functions.php:50
-#, fuzzy
 msgid "Enjoy this post feature"
-msgstr "이 포스트가 마음에 들다"
+msgstr "게시물 구독 기능"
 
 #: functions.php:51
 msgid "Check this box if you would like to ACTIVATE <em>Enjoy this post</em> feature"
-msgstr "<em>이 포스트가 마음에 들다</em> 기능을 활성화 시키려면 이 박스를 체크하십시오."
+msgstr "<em>게시물 구독 기능</em> 기능을 활성화 시키려면 이 박스를 체크하십시오."
 
 #: functions.php:56
-#, fuzzy
 msgid "Show categories on front menu"
-msgstr "카테고리를 상단에 표시"
+msgstr "프런트 메뉴에 카테고리 표시"
 
 #: functions.php:57
-#, fuzzy
 msgid "Check this box if you would like to SHOW CATEGORIES instead pages on front menu"
 msgstr "페이지 상단바 대신 카테고리를 표시하려면 이 박스를 체크하십시오"
 
 #: functions.php:62
-msgid "Remove tags from posts"
-msgstr ""
+#, fuzzy
+msgid "Exclude pages from front menu"
+msgstr "프런트 메뉴에 카테고리 표시"
 
 #: functions.php:63
-#, fuzzy
-msgid "Show only categories in post footer"
-msgstr "포스트 하단에 카테고리만 표시"
+#: functions.php:69
+msgid "Correct input: <code>5,19,24</code>"
+msgstr ""
 
 #: functions.php:68
-msgid "Remove RSS badge"
-msgstr ""
-
-#: functions.php:69
-msgid "Remove RSS badge from blog header"
-msgstr ""
+#, fuzzy
+msgid "Exclude categories from front menu"
+msgstr "프런트 메뉴에 카테고리 표시"
 
 #: functions.php:74
 msgid "Remove home button"
-msgstr ""
+msgstr "홈 버튼 제거"
 
 #: functions.php:75
 msgid "Remove home button from front menu"
-msgstr ""
+msgstr "프런트 메뉴에서 홈 버튼 제거"
 
 #: functions.php:80
 msgid "Remove search box"
-msgstr ""
+msgstr "검색박스 제거"
 
 #: functions.php:81
 msgid "Remove search box and expand space for front menu"
-msgstr ""
+msgstr "프런트 메뉴의 검색박스와 확장공간 제거"
+
+#: functions.php:86
+msgid "Remove tags from posts"
+msgstr "포스트에서 태그 제거"
 
 #: functions.php:87
+msgid "Show only categories in post footer"
+msgstr "포스트 하단에 카테고리만 표시"
+
+#: functions.php:92
+msgid "Remove RSS badge"
+msgstr "RSS 배지 제거"
+
+#: functions.php:93
+msgid "Remove RSS badge from blog header"
+msgstr "블로그 헤더에서 RSS 배지 제거"
+
+#: functions.php:99
 msgid "Find <code>name=\"cx\"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here."
+msgstr "Google CSE 검색박스 코드에서 <code>name=\"cx\"</code>를 찾으신후 갚을 입력하세요."
+
+#: functions.php:104
+#, fuzzy
+msgid "Sidebox settings"
+msgstr "Cufon 설정"
+
+#: functions.php:106
+msgid "Show only date"
 msgstr ""
 
-#: functions.php:124
-#: functions.php:136
+#: functions.php:106
+#, fuzzy
+msgid "Show only in posts"
+msgstr "포스트 하단에 카테고리만 표시"
+
+#: functions.php:106
+msgid "Last two options together"
+msgstr ""
+
+#: functions.php:142
+#: functions.php:154
 msgid "LightWord Settings"
 msgstr "LightWord 설정"
 
-#: functions.php:131
+#: functions.php:149
 msgid "settings saved"
 msgstr "설정이 저장 되였습니다"
 
-#: functions.php:132
+#: functions.php:150
 msgid "settings reset"
 msgstr "설정이 재설정 되였습니다"
 
-#: functions.php:140
+#: functions.php:158
 msgid "Support the developer"
 msgstr "개발자 지원"
 
-#: functions.php:151
+#: functions.php:169
 msgid "Theme version check"
 msgstr "테마 버전 체크"
 
-#: functions.php:160
+#: functions.php:178
 msgid "Version check failed."
 msgstr "버전 체크 실패"
 
-#: functions.php:162
+#: functions.php:180
 msgid "Cool! You have the latest version."
 msgstr "쿨! 귀하가 사용하고 있는것은 최신버전 입니다."
 
-#: functions.php:162
-#: functions.php:163
-#, fuzzy
+#: functions.php:180
+#: functions.php:181
 msgid "view changelog"
-msgstr "변경사항 저장"
+msgstr "변경사항 보기"
 
-#: functions.php:163
+#: functions.php:181
 msgid "You have"
 msgstr "귀하가 사용하고 있는것은 "
 
-#: functions.php:163
+#: functions.php:181
 msgid "Latest version"
 msgstr "최신버전"
 
-#: functions.php:163
+#: functions.php:181
 msgid "Get the latest version"
 msgstr "최신버전 받기"
 
-#: functions.php:170
+#: functions.php:188
 msgid "General settings"
 msgstr "일반설정"
 
-#: functions.php:208
+#: functions.php:242
 msgid "Save changes"
 msgstr "변경사항 저장"
 
-#: functions.php:214
+#: functions.php:248
 msgid "Search for help"
 msgstr "도움에 대한 검색"
 
-#: functions.php:214
+#: functions.php:248
 msgid "or"
 msgstr "혹은"
 
-#: functions.php:229
-#: functions.php:241
+#: functions.php:263
+#: functions.php:275
 msgid "No updates available."
 msgstr "사용가능한 업데이트가 없음."
 
-#: functions.php:248
+#: functions.php:282
 msgid "What is Cufon?"
 msgstr "Cufon은 무엇인지?"
 
-#: functions.php:255
+#: functions.php:289
 msgid "Click here to reset all settings"
 msgstr "여기를 클릭하여 모든 설정을 재설정"
 
-#: functions.php:396
+#: functions.php:454
 msgid "Home"
 msgstr "홈"
 
-#: functions.php:415
+#: functions.php:486
 msgid "Search"
 msgstr "검색"
 
-#: functions.php:439
+#: functions.php:511
+#: functions.php:528
+msgid "Off"
+msgstr ""
+
+#: functions.php:566
 msgid "delete"
-msgstr ""
+msgstr "삭제"
 
-#: functions.php:440
+#: functions.php:567
 msgid "spam"
-msgstr ""
+msgstr "스팸"
 
-#: functions.php:441
+#: functions.php:568
 msgid "edit"
-msgstr ""
+msgstr "편집"
 
-#: functions.php:449
+#: functions.php:576
 msgid "Please enable referrers in your browser, or, if you're a spammer, bugger off!"
-msgstr ""
+msgstr "귀하의 브라우저에서 유출입 사이트를 활성화 하십시오.혹,당신이 스패머라면,꺼져!"
 
-#: functions.php:461
+#: functions.php:588
 #: sidebar.php:33
 msgid "Syndicate this site using RSS"
 msgstr "RSS를 사용하여 이 사이트를 신디케이트"
 
-#: functions.php:461
+#: functions.php:588
 msgid "Subscribe via RSS"
 msgstr "RSS를 통해 구독"
 
-#: functions.php:484
-#: legacy.comments.php:32
-msgid "F jS, Y"
+#: functions.php:611
+#, fuzzy
+msgid "F jS, Y - H:i"
 msgstr "Y년m월d일"
 
-#: functions.php:486
+#: functions.php:613
 msgid "( REPLY )"
 msgstr "( 답장 )"
 
-#: functions.php:487
+#: functions.php:614
 #: legacy.comments.php:39
 msgid "Your comment is awaiting moderation."
 msgstr "귀하의 덧글은 검토되고 있습니다."
@@ -394,9 +429,8 @@ msgstr "덧글: 1개"
 
 #: index.php:12
 #: single.php:27
-#, fuzzy
 msgid "Comments Off"
-msgstr "덧글"
+msgstr "덧글 잠금"
 
 #: index.php:12
 msgid "No Comments"
@@ -413,6 +447,10 @@ msgstr "&laquo; 최근 항목"
 #: index.php:30
 msgid "Older Entries &raquo;"
 msgstr "이전 항목 &raquo;"
+
+#: legacy.comments.php:32
+msgid "F jS, Y"
+msgstr "Y년m월d일"
 
 #: legacy.comments.php:32
 msgid "edit this comment"
@@ -473,7 +511,7 @@ msgstr "저희의 RSS 피드 구독을 고려해버세요!"
 
 #: single.php:21
 msgid "About"
-msgstr ""
+msgstr "소개"
 
 #: single.php:21
 msgid "No description. Please complete your profile."

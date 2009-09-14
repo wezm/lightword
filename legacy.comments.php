@@ -2,21 +2,15 @@
 if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 	die ('Please do not load this page directly. Thanks!');
 
-<?php if ( !empty($post->post_password) && $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) : ?>
+	if (!empty($post->post_password)) { // if there's a password
+		if ($_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password) {
+		  ?>
 <p class="nocomments"><?php _e('This post is password protected. Enter the password to view comments.','lightword');  ?></p>
-<?php return; endif; ?>
-
-
-
-$comments_nr = get_comment_type_count('comment');
-$trackbacks_nr = get_comment_type_count('ping');
-$oddcomment = 'alt ';
-
-?>
+<?php return; } }?>
 <a name="comments"></a>
 <div id="tabsContainer">
-<a href="#" class="tabs selected"><span><?php _e('Comments','lightword'); ?> (<?php echo $comments_nr; ?>)</span></a>
-<a href="#" class="tabs"><span><?php _e('Trackbacks','lightword'); ?> (<?php echo $trackbacks_nr; ?>)</span></a>  <span class="subscribe_comments"><?php post_comments_feed_link(__('( subscribe to comments on this post )','lightword')); ?></span>
+<a href="#" class="tabs selected"><span><?php _e('Comments','lightword'); ?></span></a>
+<span class="subscribe_comments"><?php post_comments_feed_link(__('( subscribe to comments on this post )','lightword')); ?></span>
 <div class="clear_tab"></div>
 <div class="tab-content selected">
 <?php if ( $comments ) : ?>
@@ -96,17 +90,5 @@ $oddcomment = ( empty( $oddcomment ) ) ? 'alt ' : '';
 <?php else : // Comments are closed ?>
 <p class="no"><?php _e('Sorry, the comment form is closed at this time.','lightword'); ?></p>
 <?php endif; ?>
-</div>
-
-<div class="tab-content">
-<?php if($trackbacks_nr == "0") { echo "<p class=\"no\">"; ?><?php _e('No trackbacks yet.','lightword'); ?><?php echo "</p>"; } ?>
-<?php if ($trackback == true) { ?>
-<?php foreach ($comments as $comment) : ?>
-<?php $comment_type = get_comment_type(); ?>
-<?php if($comment_type != 'comment') { ?>
-<div class="trackbacks"><?php comment_author_link() ?></div>
-<?php } ?>
-<?php endforeach; ?>
-<?php } ?>
 </div>
 </div>

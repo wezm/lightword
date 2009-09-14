@@ -3,7 +3,7 @@ if (!empty($_SERVER['SCRIPT_FILENAME']) && 'functions.php' == basename($_SERVER[
 die ('Please do not load this page directly. Thanks!');
 
 $themename = "LightWord";
-$themeversion = "1.8.5";
+$themeversion = "1.8.7";
 $shortname = "lw";
 $top_header_image_path = get_bloginfo('template_directory')."/images/header-image.png";
 
@@ -59,17 +59,17 @@ $options = array (
             "type" => "checkbox",
             "std" => "false"),
 
-    array(  "name" => __('Remove tags from posts','lightword'),
-			"desc" => __('Show only categories in post footer','lightword'),
-            "id" => $shortname."_disable_tags",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  "name" => __('Exclude pages from front menu','lightword'),
+			"desc" => __('Correct input: <code>5,19,24</code>','lightword'),
+            "id" => $shortname."_exclude_pages",
+            "type" => "exclude_pages",
+            "std" => ""),
 
-    array(  "name" => __('Remove RSS badge','lightword'),
-			"desc" => __('Remove RSS badge from blog header','lightword'),
-            "id" => $shortname."_remove_rss",
-            "type" => "checkbox",
-            "std" => "false"),
+    array(  "name" => __('Exclude categories from front menu','lightword'),
+			"desc" => __('Correct input: <code>5,19,24</code>','lightword'),
+            "id" => $shortname."_exclude_categories",
+            "type" => "exclude_categories",
+            "std" => ""),
 
     array(  "name" => __('Remove home button','lightword'),
 			"desc" => __('Remove home button from front menu','lightword'),
@@ -83,20 +83,34 @@ $options = array (
             "type" => "checkbox",
             "std" => "false"),
 
+    array(  "name" => __('Remove tags from posts','lightword'),
+			"desc" => __('Show only categories in post footer','lightword'),
+            "id" => $shortname."_disable_tags",
+            "type" => "checkbox",
+            "std" => "false"),
+
+    array(  "name" => __('Remove RSS badge','lightword'),
+			"desc" => __('Remove RSS badge from blog header','lightword'),
+            "id" => $shortname."_remove_rss",
+            "type" => "checkbox",
+            "std" => "false"),
+
     array(  "name" => 'Google Custom Search Engine',
 			"desc" => __('Find <code>name="cx"</code> in the <strong>Search box code</strong> of Google CSE, and type the <code>value</code> here.','lightword'),
             "id" => $shortname."_google_search_code",
             "type" => "text",
             "std" => ""),
 
+    array(  "name" => __('Sidebox settings', 'lightword'),
+            "id" => $shortname."_sidebox_settings",
+            "options" => array(__('Enabled','lightword'), __('Disabled','lightword'), __('Show only date','lightword'), __('Show only in posts','lightword'), __('Last two options together','lightword')),
+            "std" => __('Enabled','lightword'),
+            "type" => "select"),
+
 	array(	"type" => "close")
 
 
 );
-
-// AUTO ADJUST HEADER IMAGE
-$header_size_height = @getimagesize($top_header_image_path);
-$top_header_image_height = $header_size_height[1];
 
 // ADMIN PAGE FUNCTIONS
 
@@ -127,7 +141,7 @@ add_theme_page("LightWord Settings", __('LightWord Settings','lightword'), 'edit
 // ADMIN PAGE LAYOUT
 
 function lightword_admin_page() {
-global $themename, $themeversion, $shortname, $options, $lw_top_header_image, $top_header_image_height;
+global $themename, $themeversion, $shortname, $options, $lw_top_header_image, $top_header_image_height, $lw_show_categories;
 if ( $_REQUEST['saved'] ) { echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '; _e('settings saved','lightword'); echo '.</strong></p></div>'; }
 if ( $_REQUEST['reset'] ) { echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '; _e('settings reset','lightword'); echo '.</strong></p></div>'; }
 ?>
@@ -177,7 +191,7 @@ if(version_compare($themeversion, $remoteVersion[0], '>=')){ _e('Cool! You have 
 <?php break;case 'text':?>
 
 <tr><td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php echo $value['name']; ?></strong></td>
-<td width="80%"><input style="width:250px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_settings( $value['id'] ) != "") { echo get_settings( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
+<td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_settings( $value['id'] ) != "") { echo get_settings( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
 </tr><tr><td><small><?php echo $value['desc']; ?></small></td>
 </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 
@@ -189,11 +203,27 @@ if(version_compare($themeversion, $remoteVersion[0], '>=')){ _e('Cool! You have 
 </tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 
 <?php break; case 'header_image': ?>
-<?php if($lw_top_header_image == "true" && $top_header_image_height == "") : ?>
+<?php if($lw_top_header_image == "true") : ?>
 <tr>
 <td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
 <td width="80%"><input style="width:50px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="<?php echo $value['type']; ?>" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
 </tr><tr><td></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+<?php endif; ?>
+
+<?php break; case 'exclude_pages': ?>
+<?php if($lw_show_categories == "false" || $lw_show_categories == "") : ?>
+<tr>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
+<td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="text" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
+</tr><tr><td><small><?php _e("".$value['desc']."","lightword"); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
+<?php endif; ?>
+
+<?php break; case 'exclude_categories': ?>
+<?php if($lw_show_categories == "true") : ?>
+<tr>
+<td width="20%" rowspan="2" valign="middle"><strong style="font-size:11px;"><?php _e("".$value['name']."","lightword"); ?></strong></td>
+<td width="80%"><input style="width:300px;" name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>" type="text" value="<?php if ( get_option( $value['id'] ) != "") { echo get_option( $value['id'] ); } else { echo $value['std']; } ?>" /></td>
+</tr><tr><td><small><?php _e("".$value['desc']."","lightword"); ?></small></td></tr><tr><td colspan="2" style="margin-bottom:5px;border-bottom:1px solid #E1E1E1;">&nbsp;</td></tr><tr><td colspan="2">&nbsp;</td></tr>
 <?php endif; ?>
 
 <?php break; case "checkbox": ?>
@@ -217,11 +247,11 @@ if(version_compare($themeversion, $remoteVersion[0], '>=')){ _e('Cool! You have 
 require_once(ABSPATH . WPINC . '/rss.php');
 $rss_wp = fetch_rss('http://wordpress.org/support/rss/tags/lightword');
 if ($rss_wp) {
-$items_wp = array_slice($rss_wp->items, 0, 2);
+$items_wp = array_slice($rss_wp->items, 0, 1);
 foreach( $items_wp as $item_wp ) {
 $pubdate = substr($item_wp['pubdate'], 0, 16);
 $title = explode(' "',$item_wp['title']);
-$title = str_replace('"','',$title[1]);
+$title = strip_tags(str_replace('"','',$title[1]));
 echo '<p><a href="'.$item_wp['link'].'" title="'.$title.'">'.$title.'</a> / <em>'.$pubdate.'</em></p>';
 }
 }else {
@@ -231,7 +261,7 @@ echo "</p>";
 }
 $rss_blog = fetch_rss('http://feeds2.feedburner.com/lightword');
 if ($rss_blog) {
-$items_blog = array_slice($rss_blog->items, 0, 3);
+$items_blog = array_slice($rss_blog->items, 0, 4);
 foreach( $items_blog as $item_blog ) {
 $pubdate = substr($item_blog['pubdate'], 0, 16);
 echo '<p><a href="'.$item_blog['guid'].'" title="'.$item_blog['title'].'">'.$item_blog['title'].'</a> / <em>'.$pubdate.'</em></p>';
@@ -333,16 +363,40 @@ if ( !function_exists('fb_update_comment_type_cache') ) {
         add_filter('the_posts', 'fb_update_comment_type_cache');
 }
 
+/**
+ * Smart cache-busting
+ * http://toscho.de/2008/frisches-layout/#comment-13
+ */
+
+if ( !function_exists('fb_css_cache_buster') ) {
+        function fb_css_cache_buster($info, $show) {
+                if ($show == 'stylesheet_url') {
+
+                        // Is there already a querystring? If so, add to the end of that.
+                        if (strpos($pieces[1], '?') === false) {
+                                return $info . "?" . filemtime(WP_CONTENT_DIR . $pieces[1]);
+                        } else {
+                                $morsels = explode("?", $pieces[1]);
+                                return $info . "&" . filemtime(WP_CONTENT_DIR . $morsles[1]);
+                        }
+                } else {
+                        return $info;
+                }
+        }
+
+        add_filter('bloginfo_url', 'fb_css_cache_buster', 9999, 2);
+}
+
 // FRONT MENU / LIST PAGES OR CATEGORIES
 
 function lw_wp_list_pages(){
-global $lw_show_categories;
+global $lw_show_categories, $lw_exclude_pages, $lw_exclude_categories;
 if ($lw_show_categories == "true") {
-$top_list = wp_list_categories('echo=0&depth=1&title_li=');
+$top_list = wp_list_categories("echo=0&depth=1&title_li=&exclude=".$lw_exclude_categories."");
 $top_list = str_replace(array('">','</a>','<span><a','current-cat"><a'),array('"><span>','</span></a>','<a','"><a class="s"'), $top_list);
 return $top_list;
 }else{
-$top_list = wp_list_pages('echo=0&depth=1&title_li=');
+$top_list = wp_list_pages("echo=0&depth=1&title_li=&exclude=".$lw_exclude_pages."");
 $top_list = str_replace(array('">','</a>','<span><a','current_page_item"><a'),array('"><span>','</span></a>','<a','"><a class="s"'), $top_list);
 return $top_list;
 }
@@ -351,10 +405,10 @@ return $top_list;
 // HEADER IMAGE
 
 function lw_header_image(){
-global $lw_top_header_image, $lw_top_header_image_height, $top_header_image_height, $top_header_image_path;
+global $lw_top_header_image, $lw_top_header_image_height, $top_header_image_path;
 if($lw_top_header_image == "" || $lw_top_header_image == "true") {
 ?>
-<div id="top" style="background:url(<?php echo $top_header_image_path; ?>) no-repeat;height:<?php echo $top_header_image_height; if(!$top_header_image_height) echo $lw_top_header_image_height; ?>px"><a name="top" class="header_image" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>"></a></div>
+<a name="top" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>"><span id="top" style="background:url('<?php echo $top_header_image_path; ?>') no-repeat;height:<?php echo $lw_top_header_image_height; ?>px"><strong><?php bloginfo('name'); ?></strong></span></a>
 <?php }else{ ?>
 <div id="top"><h1 id="logo"><a name="top" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> <small><?php bloginfo('description'); ?></small></h1></div>
 <?php
@@ -392,17 +446,30 @@ if($cufon_enabled == 1) echo $cufon_footer_script;
 
 // HOME BUTTON
 
-function lw_homebtn(){
-global $lw_remove_homebtn; if($lw_remove_homebtn == "false") { if(is_front_page()) $selected="s"; ?><li><a class="<?php echo $selected; ?>" title="<?php _e('Home','lightword'); ?>" href="<?php bloginfo('url'); ?>"><span><?php _e('Home','lightword'); ?></span></a></li>
+function lw_homebtn($homebtn_value){
+global $lw_remove_homebtn; if($lw_remove_homebtn == "false") { if(is_front_page()) $selected="s"; ?><li><a class="<?php echo $selected; ?>" title="<?php echo $homebtn_value; ?>" href="<?php bloginfo('url'); ?>"><span><?php echo $homebtn_value ?></span></a></li>
 <?php
 }
+}
+
+// CANONICAL COMMENTS
+
+function canonical_for_comments() {
+global $cpage, $post;
+if ( $cpage > 1 ) :
+echo "\n";
+echo "<link rel='canonical' href='";
+echo get_permalink( $post->ID );
+echo "' />\n";
+endif;
 }
 
 // SEARCH BOX / WORDPRESS BASIC SEARCH OR GOOGLE CSE
 
 function lw_searchbox(){
 global $lw_remove_searchbox, $lw_google_search_code;
-if($lw_remove_searchbox!="true")
+$lw_google_search_code = trim(str_replace(" ","",$lw_google_search_code));
+if($lw_remove_searchbox != "true")
 if(!empty($lw_google_search_code)){
 ?>
 <form action="http://www.google.com/cse" method="get" id="searchform">
@@ -422,6 +489,62 @@ function lw_expmenu(){
 global $lw_remove_searchbox;
 if($lw_remove_searchbox=="true") echo " class=\"expand\"";
 }
+
+// SIDEBOX
+
+function lw_show_sidebox(){
+global $lw_sidebox_settings;
+
+switch ($lw_sidebox_settings)
+{
+case "Enabled":
+default:
+/* START ENABLED */
+echo "<div class=\"comm_date\"><span class=\"data\"><span class=\"j\">".get_the_time('j')."</span>".get_the_time('M/y')."</span><span class=\"nr_comm\">";
+if(function_exists('dsq_is_installed')) echo "<a class=\"nr_comm_spot\" href=\"".get_permalink()."\">N/A</a>";
+else
+echo "<a class=\"nr_comm_spot\" href=\"".get_permalink()."#comments\">";
+if(!comments_open()) _e('Off','lightword'); else echo fb_get_comment_type_count('comment')."</a>";
+echo "</span></div>\n";
+/* END ENABLED */
+break;
+
+case "Disabled":
+/* START DISABLED */
+/* END DISABLED */
+break;
+
+case "Show only in posts":
+/* START ENABLED */
+if(is_single()){
+echo "<div class=\"comm_date\"><span class=\"data\"><span class=\"j\">".get_the_time('j')."</span>".get_the_time('M/y')."</span><span class=\"nr_comm\">";
+if(function_exists('dsq_is_installed')) echo "<a class=\"nr_comm_spot\" href=\"".get_permalink()."\">N/A</a>";
+else
+echo "<a class=\"nr_comm_spot\" href=\"".get_permalink()."#comments\">";
+if(!comments_open()) _e('Off','lightword'); else echo fb_get_comment_type_count('comment')."</a>";
+echo "</span></div>\n";
+}
+/* END ENABLED */
+break;
+
+case "Show only date":
+/* START ONLY DATE */
+echo "<div class=\"comm_date only_date\"><span class=\"data\"><span class=\"j\">".get_the_time('j')."</span>".get_the_time('M/y')."</span><span class=\"nr_comm\">";
+echo "</span></div>\n";
+/* END ONLY DATE */
+break;
+
+case "Last two options together":
+/* START  LAST TWO */
+if(is_single()){
+echo "<div class=\"comm_date only_date\"><span class=\"data\"><span class=\"j\">".get_the_time('j')."</span>".get_the_time('M/y')."</span><span class=\"nr_comm\">";
+echo "</span></div>\n";
+}
+/* END LAST TWO */
+break;
+
+} // end switch
+} // end function
 
 // LEGACY COMMENTS / FOR OLD VERSION OF WORDPRESS
 
@@ -481,7 +604,7 @@ echo "/*]]>*/</style><![endif]-->";
 function nested_comments($comment, $args, $depth) { $GLOBALS['comment'] = $comment; ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>"><div id="comment-<?php comment_ID(); ?>">
 <div class="comment_content"><div class="comment-meta commentmetadata"><div class="alignleft"><?php echo get_avatar($comment,$size='36'); ?></div>
-<div class="alignleft" style="padding-top:5px;"><strong class="comment_author"><?php comment_author_link() ?></strong><br/><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date(__('F jS, Y','lightword')) ?></a> <?php options_comment_link(get_comment_ID()); ?></div><div class="clear"></div></div>
+<div class="alignleft" style="padding-top:5px;"><strong class="comment_author"><?php comment_author_link() ?></strong><br/><a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date(__('F jS, Y - H:i','lightword')) ?></a> <?php options_comment_link(get_comment_ID()); ?></div><div class="clear"></div></div>
 <?php comment_text() ?>
 <div class="reply"><?php comment_reply_link(array_merge( $args, array('reply_text' => __('( REPLY )','lightword'), 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></div>
 <?php if ($comment->comment_approved == '0') : ?><span class="moderation"><?php _e('Your comment is awaiting moderation.','lightword'); ?></span><br /><?php endif; ?></div><div class="clear"></div></div>
@@ -499,14 +622,16 @@ load_theme_textdomain('lightword', get_template_directory() . '/lang');
 
 // ENABLE FUNCTIONS
 
-add_action('widgets_init', 'my_unregister_widgets');
-add_filter('comments_template', 'legacy_comments');
-add_action('check_comment_flood', 'check_referrer');
+
 add_action('admin_menu', 'lightword_admin');
 add_action('wp_head',    'cufon_header');
 add_action('wp_head',    'ie_png_transparency');
 add_action('wp_footer',  'cufon_footer');
 add_action('wp_footer',  'comment_tabs');
+add_action( 'wp_head', 'canonical_for_comments' );
+add_action('widgets_init', 'my_unregister_widgets');
+add_filter('comments_template', 'legacy_comments');
+add_action('check_comment_flood', 'check_referrer');
 remove_action('wp_head', 'wp_generator');
 remove_filter('the_content', 'wptexturize');
 ?>

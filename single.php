@@ -2,9 +2,9 @@
 <div id="content-body">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div <?php if (function_exists("post_class")) post_class(); else print 'class="post"'; ?> id="post-<?php the_ID(); ?>">
-<div class="comm_date"><span class="data"><span class="j"><?php the_time('j'); ?></span><?php the_time('M/y'); ?></span><span class="nr_comm"><?php if(function_exists('dsq_is_installed')) { echo '<a class="nr_comm_spot" href="'; echo the_permalink(); echo '">N/A</a>';  }else{ ?><a class="nr_comm_spot" href="<?php the_permalink(); ?>#comments"><?php echo fb_get_comment_type_count('comment'); ?></a><?php } ?></span></div>
+<?php lw_show_sidebox(); ?>
 <h2><a title="<?php the_title(); ?>" href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-<?php edit_post_link(__('Edit this post','lightword'), '', ''); ?>
+<?php edit_post_link(__('Edit this post','lightword'), '<span class="edit_content">', '</span>'); ?>
 
 <?php the_content(''); ?>
 
@@ -18,7 +18,7 @@
 <?php if ($lw_post_author == "true" && is_attachment() != TRUE) : ?>
 <div class="about_author clear">
 <span class="alignleft"><?php echo get_avatar( get_the_author_id(), '28' );   ?></span>
-<span class="alignleft" style="width:470px;"><h4><?php _e('About','lightword'); ?> <a href="<?php the_author_url(); ?> "><?php the_author(); ?></a></h4><?php the_author_description(); if(!get_the_author_description()) _e('No description. Please complete your profile.','lightword'); ?></span><div class="clear"></div>
+<div class="alignleft" style="width:470px;"><h4><?php _e('About','lightword'); ?> <a href="<?php the_author_url(); ?> "><?php the_author(); ?></a></h4><?php the_author_description(); if(!get_the_author_description()) _e('No description. Please complete your profile.','lightword'); ?></div><div class="clear"></div>
 </div>
 <?php endif; ?>
 
